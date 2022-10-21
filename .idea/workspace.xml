@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c063a567-29af-4f08-92e4-1c9f3890fec3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataStructures/src/com/ricky/stack/PolandNotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataStructures/src/com/ricky/stack/PolandNotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/com/ricky/stack/ArrayStackDemo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/com/ricky/stack/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataStructures/src/com/ricky/stack/PolandNotation.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +55,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/DataStructures/src/com/ricky" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/SwordOffer/src/com/ricky/LinkedList" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -63,13 +67,19 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\LeetCode\SwordOffer\src\com\ricky\LinkedList" />
+      <recent name="D:\LeetCode\DataStructures\src\com\ricky" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.SingleLinkedListDemo">
     <configuration name="ArrayQueueDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ricky.queue.ArrayQueueDemo" />
+      <option name="MAIN_CLASS_NAME" value="com.ricky.data_struct.queue.ArrayQueueDemo" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ricky.queue.*" />
+          <option name="PATTERN" value="com.ricky.data_struct.queue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,11 +88,11 @@
       </method>
     </configuration>
     <configuration name="CircleArrayQueueDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ricky.queue.CircleArrayQueueDemo" />
+      <option name="MAIN_CLASS_NAME" value="com.ricky.data_struct.queue.CircleArrayQueueDemo" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ricky.queue.*" />
+          <option name="PATTERN" value="com.ricky.data_struct.queue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,11 +101,11 @@
       </method>
     </configuration>
     <configuration name="SingleLinkedListDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ricky.linkedlist.SingleLinkedListDemo" />
+      <option name="MAIN_CLASS_NAME" value="com.ricky.data_struct.linkedlist.SingleLinkedListDemo" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ricky.linkedlist.*" />
+          <option name="PATTERN" value="com.ricky.data_struct.linkedlist.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,11 +114,11 @@
       </method>
     </configuration>
     <configuration name="SparseArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ricky.sparsearray.SparseArray" />
+      <option name="MAIN_CLASS_NAME" value="com.ricky.data_struct.sparsearray.SparseArray" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ricky.sparsearray.*" />
+          <option name="PATTERN" value="com.ricky.data_struct.sparsearray.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,7 +145,6 @@
         <item itemvalue="Application.CircleArrayQueueDemo" />
         <item itemvalue="Application.SparseArray" />
         <item itemvalue="Application.ArrayQueueDemo" />
-        <item itemvalue="Application.SparseArray (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -147,7 +156,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665971381184</updated>
-      <workItem from="1665971382418" duration="26564000" />
+      <workItem from="1665971382418" duration="27229000" />
+      <workItem from="1666359847070" duration="1176000" />
+      <workItem from="1666361118905" duration="142000" />
+      <workItem from="1666362678175" duration="555000" />
     </task>
     <servers />
   </component>
