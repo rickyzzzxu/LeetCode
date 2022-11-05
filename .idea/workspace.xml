@@ -69,20 +69,7 @@
       <recent name="D:\LeetCode\DataStructures\src\com\ricky" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.demo">
-    <configuration name="ArrayQueueDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ricky.data_struct.queue.ArrayQueueDemo" />
-      <module name="DataStructures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ricky.data_struct.queue.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.demo (1)">
     <configuration name="CircleArrayQueueDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ricky.data_struct.queue.CircleArrayQueueDemo" />
       <module name="DataStructures" />
@@ -135,6 +122,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="demo (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ricky.dp.demo" />
+      <module name="SwordOffer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ricky.dp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ricky.search_algorithm.demo" />
       <module name="SwordOffer" />
@@ -150,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.demo (1)" />
         <item itemvalue="Application.demo" />
         <item itemvalue="Application.SingleLinkedListDemo" />
         <item itemvalue="Application.CircleArrayQueueDemo" />
         <item itemvalue="Application.SparseArray" />
-        <item itemvalue="Application.ArrayQueueDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +169,8 @@
       <workItem from="1665971382418" duration="27229000" />
       <workItem from="1666359847070" duration="1176000" />
       <workItem from="1666361118905" duration="142000" />
-      <workItem from="1666362678175" duration="37642000" />
+      <workItem from="1666362678175" duration="38004000" />
+      <workItem from="1667450098355" duration="4186000" />
     </task>
     <servers />
   </component>
