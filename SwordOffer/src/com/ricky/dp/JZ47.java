@@ -13,6 +13,8 @@ public class JZ47 {
             ]
     那么路径 1→3→5→2→1 可以拿到最多价值的礼物，价值为12*/
 
+
+
     public class Solution {
         /**
          * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
@@ -25,21 +27,20 @@ public class JZ47 {
             // write code here
             int row = grid.length;
             int col = grid[0].length;
-            int[] dp = new int[col];
-            dp[0] = grid[0][0];
-            //初始化第一行
             for(int i = 1; i < col; i++){
-                dp[i] = dp[i - 1] + grid[0][i];
+                grid[0][i] = grid[0][i - 1] + grid[0][i];
+            }
+
+            for(int j = 1; j < row; j++){
+                grid[j][0] = grid[j - 1][0] + grid[j][0];
             }
 
             for(int i = 1; i < row; i++){
-                dp[0] = dp[0] + grid[i][0];
                 for(int j = 1; j < col; j++){
-                    dp[j] = Math.max(dp[j], dp[j - 1]) + grid[i][j];
+                    grid[i][j] = Math.max(grid[i - 1][j], grid[i][j - 1]) + grid[i][j];
                 }
             }
-
-            return dp[col - 1];
+            return grid[row - 1][col - 1];
         }
     }
 }
