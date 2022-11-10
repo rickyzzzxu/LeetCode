@@ -52,7 +52,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../A_demo/reggie_take_out" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../A_demo/market_demo" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -171,7 +171,8 @@
       <workItem from="1666361118905" duration="142000" />
       <workItem from="1666362678175" duration="38004000" />
       <workItem from="1667450098355" duration="5643000" />
-      <workItem from="1667788432989" duration="3126000" />
+      <workItem from="1667788432989" duration="6218000" />
+      <workItem from="1668058905244" duration="2922000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,5 @@
 package com.ricky.tree;
 
-import java.util.LinkedList;
 
 public class JZ37 {
     /*序列化二叉树
@@ -24,54 +23,38 @@ public class TreeNode {
 
 }
 */
-import java.util.*;
     public class Solution {
-        String Serialize(TreeNode root) {
-            if (root == null) {
-                return "";
-            }
-
-            Queue<TreeNode> queue = new LinkedList<>();
-            StringBuilder str = new StringBuilder();
-            queue.add(root);
-            while (!queue.isEmpty()) {
-                TreeNode node = queue.poll();
-                if (node != null) {
-                    queue.add(node.left);
-                    queue.add(node.right);
-                    str.append(node.val + ",");
-                } else {
-                    str.append("#,");
-                }
-            }
-            return str.toString();
+        /**
+         *
+         * @param root TreeNode类
+         * @param o1 int整型
+         * @param o2 int整型
+         * @return int整型
+         */
+        public int lowestCommonAncestor (TreeNode root, int o1, int o2) {
+            // write code here
+            return f(root, o1, o2).val;
         }
 
-        TreeNode Deserialize(String str) {
-            if (str == null || str.length() == 0) {
+        public TreeNode f(TreeNode root, int o1, int o2){
+            if(root == null){
                 return null;
             }
 
-            Queue<TreeNode> queue = new LinkedList<>();
-            String[] s = str.split(",");
-            int i = 1;
-            TreeNode root = new TreeNode(Integer.parseInt(s[0]));
-            queue.add(root);
-            while (!queue.isEmpty()) {
-                TreeNode node = queue.poll();
-                if (!s[i].equals("#")) {
-                    TreeNode left = new TreeNode(Integer.parseInt(s[i]));
-                    node.left = left;
-                    queue.add(left);
-                }
-                i++;
-                if(!s[i].equals("#")){
-                    TreeNode right = new TreeNode(Integer.parseInt(s[i]));
-                    node.right = right;
-                    queue.add(right);
-                }
-                i++;
+            if(root.val == o1 || root.val == o2){
+                return root;
             }
+
+            TreeNode left = f(root.left, o1, o2);
+            TreeNode right = f(root.right, o1, o2);
+            if(left == null){
+                return right;
+            }
+
+            if(right == null){
+                return left;
+            }
+            //left != null && right != null,返回root
             return root;
         }
     }
