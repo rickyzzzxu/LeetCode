@@ -2,7 +2,7 @@ package com.ricky.sort;
 
 import java.util.PriorityQueue;
 
-public class JZ4 {
+public class JZ41 {
     /*数据流中的中位数
             描述
     如何得到一个数据流中的中位数？如果从数据流中读出奇数个数值，那么中位数就是所有数值排序之后位于中
