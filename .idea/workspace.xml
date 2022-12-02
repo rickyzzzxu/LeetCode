@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c063a567-29af-4f08-92e4-1c9f3890fec3" name="Changes" comment="" />
+    <list default="true" id="c063a567-29af-4f08-92e4-1c9f3890fec3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +15,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Tag Library Descriptor" />
         <option value="Class" />
       </list>
     </option>
@@ -50,13 +53,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AAA" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -68,38 +71,12 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.demo1">
-    <configuration name="CircleArrayQueueDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ricky.data_struct.queue.CircleArrayQueueDemo" />
-      <module name="DataStructures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ricky.data_struct.queue.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SingleLinkedListDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ricky.data_struct.linkedlist.SingleLinkedListDemo" />
       <module name="DataStructures" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ricky.data_struct.linkedlist.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SparseArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ricky.exercise.SparseArray" />
-      <module name="DataStructures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ricky.exercise.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,13 +123,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="demo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ricky.demo2" />
+      <module name="AAA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ricky.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.demo1" />
+        <item itemvalue="Application.demo2" />
         <item itemvalue="Application.demo (1)" />
         <item itemvalue="Application.demo" />
         <item itemvalue="Application.SingleLinkedListDemo" />
-        <item itemvalue="Application.CircleArrayQueueDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +161,9 @@
       <workItem from="1667450098355" duration="5643000" />
       <workItem from="1667788432989" duration="6218000" />
       <workItem from="1668058905244" duration="11025000" />
-      <workItem from="1668765613093" duration="17313000" />
+      <workItem from="1668765613093" duration="18960000" />
+      <workItem from="1669886096245" duration="598000" />
+      <workItem from="1669905366454" duration="12961000" />
     </task>
     <servers />
   </component>
