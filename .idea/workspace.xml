@@ -70,7 +70,7 @@
       <recent name="D:\LeetCode\DataStructures\src\com\ricky" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.demo1">
+  <component name="RunManager" selected="Application.demo2">
     <configuration name="SingleLinkedListDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ricky.data_struct.linkedlist.SingleLinkedListDemo" />
       <module name="DataStructures" />
@@ -138,8 +138,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.demo1" />
         <item itemvalue="Application.demo2" />
+        <item itemvalue="Application.demo1" />
         <item itemvalue="Application.demo (1)" />
         <item itemvalue="Application.demo" />
         <item itemvalue="Application.SingleLinkedListDemo" />
@@ -163,7 +163,7 @@
       <workItem from="1668058905244" duration="11025000" />
       <workItem from="1668765613093" duration="18960000" />
       <workItem from="1669886096245" duration="598000" />
-      <workItem from="1669905366454" duration="14208000" />
+      <workItem from="1669905366454" duration="17466000" />
     </task>
     <servers />
   </component>
