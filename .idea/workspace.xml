@@ -53,7 +53,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../A_demo/market_demo" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -163,7 +163,7 @@
       <workItem from="1668058905244" duration="11025000" />
       <workItem from="1668765613093" duration="18960000" />
       <workItem from="1669886096245" duration="598000" />
-      <workItem from="1669905366454" duration="17466000" />
+      <workItem from="1669905366454" duration="18845000" />
     </task>
     <servers />
   </component>
