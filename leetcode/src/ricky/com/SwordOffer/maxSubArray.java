@@ -1,4 +1,4 @@
-package ricky.com;
+package ricky.com.SwordOffer;
 
 public class maxSubArray {
     //剑指 Offer 42. 连续子数组的最大和

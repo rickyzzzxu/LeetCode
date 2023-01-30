@@ -1,4 +1,4 @@
-package ricky.com;
+package ricky.com.SwordOffer;
 
 public class countDigitOne {
     /*输入一个整数 n ，求1～n这n个整数的十进制表示中1出现的次数。

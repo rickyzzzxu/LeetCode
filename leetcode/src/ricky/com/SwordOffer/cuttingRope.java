@@ -1,4 +1,4 @@
-package ricky.com;
+package ricky.com.SwordOffer;
 
 public class cuttingRope {
     /*给你一根长度为 n 的绳子，请把绳子剪成整数长度的 m 段（m、n都是整数，n>1并且m>1），每段绳子的长度记

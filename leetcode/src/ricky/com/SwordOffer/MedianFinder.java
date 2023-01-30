@@ -1,4 +1,4 @@
-package ricky.com;
+package ricky.com.SwordOffer;
 
 import java.util.PriorityQueue;
 

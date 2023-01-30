@@ -1,4 +1,4 @@
-package ricky.com;
+package ricky.com.SwordOffer;
 
 public class prefixCount {
     /*给你一个字符串数组 words 和一个字符串 pref 。
