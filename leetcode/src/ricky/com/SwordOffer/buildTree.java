@@ -16,6 +16,7 @@ public class buildTree {
         }
     }
 
+    //时间：O(n);空间：O(n)
     class Solution {
         HashMap<Integer, Integer> map = new HashMap<>();
 
@@ -31,15 +32,15 @@ public class buildTree {
             return f(preorder, 0, preorder.length - 1, inorder, 0, inorder.length - 1);
         }
 
-        public TreeNode f(int[] pre, int l1, int r1, int[] inorder, int l2, int r2) {
+        public TreeNode f(int[] preorder, int l1, int r1, int[] inorder, int l2, int r2) {
             if (l1 > r1) {
                 return null;
             }
 
-            TreeNode root = new TreeNode(pre[l1]);
-            int i = map.get(pre[l1]);
-            root.left = f(pre, l1 + 1, l1 + i - l2, inorder, l2, i - l2);
-            root.right = f(pre, l1 + i - l2 + 1, r1, inorder, i + 1, r2);
+            int i = map.get(preorder[l1]);
+            TreeNode root = new TreeNode(preorder[l1]);
+            root.left = f(preorder, l1 + 1, l1 + i - l2, inorder, l2, i - 1);
+            root.right = f(preorder, l1 + i - l2 + 1, r1, inorder, i + 1, r2);
             return root;
         }
     }
