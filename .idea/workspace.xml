@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c063a567-29af-4f08-92e4-1c9f3890fec3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/isMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/isMatch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +174,7 @@
       <workItem from="1671288677398" duration="1425000" />
       <workItem from="1671550350116" duration="168000" />
       <workItem from="1673163904209" duration="3420000" />
-      <workItem from="1675079451717" duration="14082000" />
+      <workItem from="1675079451717" duration="16115000" />
     </task>
     <servers />
   </component>
