@@ -22,19 +22,20 @@ public class isNumber {
             boolean isNum = false;
             boolean isE = false;
             boolean isDot = false;
-            for(int i = 0; i < s.length(); i++){
-                if(Character.isDigit(s.charAt(i))){
+            for (int i = 0; i < s.length(); i++) {
+                if (Character.isDigit(s.charAt(i))) {
                     isNum = true;
-                }else if(s.charAt(i) == '.' && (isDot == false) && !isE){
-                    isDot = true;
-                }else if((s.charAt(i) == 'e' || s.charAt(i) == 'E') && (isNum && !isE)){
+                    // 为什么有括号，因为if里面只有出现了true，后面的就不会继续判断了
+                } else if ((s.charAt(i) == 'E' || s.charAt(i) == 'e') && !isE && isNum) {
                     isE = true;
                     isNum = false;
-                }else if(s.charAt(i) == '+' || s.charAt(i) == '-'){
-                    if(i != 0 && s.charAt(i - 1) != 'e' && s.charAt(i - 1) != 'E'){
+                } else if (s.charAt(i) == '.' && !isE && !isDot) {
+                    isDot = true;
+                } else if (s.charAt(i) == '+' || s.charAt(i) == '-') {
+                    if (i != 0 && s.charAt(i - 1) != 'E' && s.charAt(i - 1) != 'e') {
                         return false;
                     }
-                }else{
+                } else {
                     return false;
                 }
             }
