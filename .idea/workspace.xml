@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c063a567-29af-4f08-92e4-1c9f3890fec3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/countDigitOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/countDigitOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AAA/ricky/demo2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AAA/ricky/demo2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AAA/ricky/test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AAA/ricky/test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/demo/demo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/demo/demo1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/ricky/com/demo/demo1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/ricky/com/demo/demo1.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +63,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="yiiguxing.plugin.translate" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -76,7 +75,7 @@
       <recent name="D:\LeetCode\DataStructures\src\com\ricky" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.demo1 (1)">
+  <component name="RunManager" selected="Application.demo2 (1)">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ricky.Main" />
       <module name="AAA" />
@@ -103,12 +102,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="demo1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ricky.demo1" />
-      <module name="AAA" />
+    <configuration name="demo2 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ricky.com.demo.demo2" />
+      <module name="leetcode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ricky.*" />
+          <option name="PATTERN" value="ricky.com.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.demo2 (1)" />
         <item itemvalue="Application.demo1 (1)" />
         <item itemvalue="Application.demo2" />
         <item itemvalue="Application.test" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.demo1" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +181,13 @@
       <workItem from="1676887524254" duration="13458000" />
       <workItem from="1677160684362" duration="8238000" />
       <workItem from="1677384014665" duration="690000" />
-      <workItem from="1677385979065" duration="3170000" />
+      <workItem from="1677385979065" duration="7466000" />
+      <workItem from="1677588423530" duration="1182000" />
+      <workItem from="1677591876333" duration="19161000" />
+      <workItem from="1678005350543" duration="4839000" />
+      <workItem from="1678116206088" duration="2344000" />
+      <workItem from="1678200529821" duration="11987000" />
+      <workItem from="1678461943794" duration="1925000" />
     </task>
     <task id="LOCAL-00001" summary="mirrorTree">
       <created>1676912932886</created>
