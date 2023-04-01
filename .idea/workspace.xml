@@ -6,8 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="c063a567-29af-4f08-92e4-1c9f3890fec3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/demo/DictionaryGenerator.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/demo/demo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/demo/demo1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/demo/demo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/demo/demo2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/ricky/com/demo/DictionaryGenerator.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/leetcode/ricky/com/demo/demo1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/ricky/com/demo/demo1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/ricky/com/demo/demo2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/ricky/com/demo/demo2.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +59,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../c盘/git-miaosha-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AAA/高校食堂供应链管理系统_gg60j/springbootgg60j" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -63,7 +67,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="yiiguxing.plugin.translate" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -75,7 +79,7 @@
       <recent name="D:\LeetCode\DataStructures\src\com\ricky" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.demo2 (1)">
+  <component name="RunManager" selected="Application.demo1 (1)">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ricky.Main" />
       <module name="AAA" />
@@ -143,8 +147,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.demo2 (1)" />
         <item itemvalue="Application.demo1 (1)" />
+        <item itemvalue="Application.demo2 (1)" />
         <item itemvalue="Application.demo2" />
         <item itemvalue="Application.test" />
         <item itemvalue="Application.Main" />
@@ -187,7 +191,31 @@
       <workItem from="1678005350543" duration="4839000" />
       <workItem from="1678116206088" duration="2344000" />
       <workItem from="1678200529821" duration="11987000" />
-      <workItem from="1678461943794" duration="1925000" />
+      <workItem from="1678461943794" duration="3080000" />
+      <workItem from="1678555816128" duration="1850000" />
+      <workItem from="1678630993870" duration="3073000" />
+      <workItem from="1678775751397" duration="1232000" />
+      <workItem from="1678790583897" duration="770000" />
+      <workItem from="1678852890030" duration="5394000" />
+      <workItem from="1679045414409" duration="633000" />
+      <workItem from="1679107024250" duration="3857000" />
+      <workItem from="1679141700301" duration="1866000" />
+      <workItem from="1679333243855" duration="3851000" />
+      <workItem from="1679402236199" duration="5913000" />
+      <workItem from="1679546429035" duration="595000" />
+      <workItem from="1679551391094" duration="1912000" />
+      <workItem from="1679639759225" duration="316000" />
+      <workItem from="1679640695145" duration="2154000" />
+      <workItem from="1679730251890" duration="1293000" />
+      <workItem from="1679799025896" duration="2405000" />
+      <workItem from="1679891436602" duration="2167000" />
+      <workItem from="1679997595153" duration="3796000" />
+      <workItem from="1680068195185" duration="3837000" />
+      <workItem from="1680158521570" duration="1918000" />
+      <workItem from="1680186415857" duration="12000" />
+      <workItem from="1680186454652" duration="9539000" />
+      <workItem from="1680319539134" duration="1895000" />
+      <workItem from="1680326855982" duration="5085000" />
     </task>
     <task id="LOCAL-00001" summary="mirrorTree">
       <created>1676912932886</created>
@@ -215,5 +243,10 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/LeetCode$demo1__1_.ic" NAME="demo1 (1) Coverage Results" MODIFIED="1678686507628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>ricky.com.demo.*</FILTER>
+    </SUITE>
   </component>
 </project>
