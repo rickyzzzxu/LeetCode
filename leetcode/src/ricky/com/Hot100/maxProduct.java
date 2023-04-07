@@ -12,15 +12,18 @@ public class maxProduct {
     子数组 是数组的连续子序列。*/
     class Solution {
         public int maxProduct(int[] nums) {
-            int res = nums[0];
+            //以i结尾的最大和最小乘积子数组
+            int[] dpMax = new int[nums.length];
+            int[] dpMin = new int[nums.length];
+            dpMax[0] = nums[0];
+            dpMin[0] = nums[0];
             int maxNum = nums[0];
             int minNum = nums[0];
+            int res = nums[0];
             for (int i = 1; i < nums.length; i++) {
-                int a = maxNum * nums[i];
-                int b = minNum * nums[i];
-                maxNum = Math.max(nums[i], Math.max(a, b));
-                minNum = Math.min(nums[i], Math.min(a, b));
-                res = Math.max(res, maxNum);
+                dpMax[i] = Math.max(nums[i], Math.max(dpMax[i - 1] * nums[i], dpMin[i - 1] * nums[i]));
+                dpMin[i] = Math.min(nums[i], Math.min(dpMax[i - 1] * nums[i], dpMin[i - 1] * nums[i]));
+                res = Math.max(res, dpMax[i]);
             }
 
             return res;
