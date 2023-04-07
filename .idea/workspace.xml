@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c063a567-29af-4f08-92e4-1c9f3890fec3" name="Changes" comment="mirrorTree" />
+    <list default="true" id="c063a567-29af-4f08-92e4-1c9f3890fec3" name="Changes" comment="mirrorTree">
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/lowestCommonAncestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/lowestCommonAncestor.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -217,7 +219,7 @@
       <workItem from="1680798635866" duration="406000" />
       <workItem from="1680833864586" duration="2046000" />
       <workItem from="1680843924041" duration="17000" />
-      <workItem from="1680846706085" duration="1223000" />
+      <workItem from="1680846706085" duration="1837000" />
     </task>
     <task id="LOCAL-00001" summary="mirrorTree">
       <created>1676912932886</created>
