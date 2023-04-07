@@ -4,12 +4,167 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c063a567-29af-4f08-92e4-1c9f3890fec3" name="Changes" comment="">
+    <list default="true" id="c063a567-29af-4f08-92e4-1c9f3890fec3" name="Changes" comment="mirrorTree">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/demo/DictionaryGenerator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/demo/demo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/demo/demo1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/demo/demo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/demo/demo2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/ricky/com/demo/DictionaryGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/addTwoNumbers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/buildTree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/canJump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/climbStairs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/combinationSum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/exist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/generateParenthesis" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/groupAnagrams" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/inorderTraversal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/isMatch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/isSymmetric" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/isValid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/isValidBST" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/largestRectangleArea" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/lengthOfLongestSubstring" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/letterCombinations" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/levelOrder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/longestPalindrome" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/longestValidParentheses" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/maxArea" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/maxDepth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/maxSubArray" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/merge" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/mergeKLists" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/mergeTwoLists" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/minDistance" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/minPathSum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/minWindow" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/nextPermutation" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/numTrees" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/permute" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/removeNthFromEnd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/rotate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/search" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/searchRange" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/sortColors" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/subsets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/threeSum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/trap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/twoSum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/twoSum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/uniquePaths" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/CQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/Codec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/Codec.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/MaxQueue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/MaxQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/MedianFinder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/MinStack" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/MinStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/SwordOffer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/SwordOffer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/buildTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/constructArr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/constructArr.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/copyRandomList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/countDigitOne.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/cuttingRope.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/cuttingRope2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/deleteNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/dicesProbability" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/dicesProbability.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/exchange.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/exist.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/fib.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/findContinuousSequence" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/findContinuousSequence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/findNthDigit" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/findNthDigit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/findNumberIn2DArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/findRepeatNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/firstUniqChar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/firstUniqChar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/getIntersectionNode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/getIntersectionNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/getKthFromEnd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/getLeastNumbers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/getLeastNumbers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/hammingWeight.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/isBalanced" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/isBalanced.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/isMatch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/isNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/isStraight" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/isStraight.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/isSubStructure" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/isSubStructure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/isSymmetric" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/isSymmetric.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/kthLargest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/kthLargest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/lastRemaining" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/lastRemaining.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/lengthOfLongestSubstring" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/lengthOfLongestSubstring.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/levelOrder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/levelOrder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/levelOrder3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/levelOrder3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/lowestCommonAncestor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/lowestCommonAncestor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/lowestCommonAncestorII" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/lowestCommonAncestorII.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/majorityElement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/maxDepth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/maxDepth.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/maxProfit" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/maxProfit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/maxSlidingWindow" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/maxSlidingWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/maxSubArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/maxValue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/maxValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/mergeInBetween.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/mergeTwoLists.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/minArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/minNumber" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/minNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/mirrorTree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/mirrorTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/missingNumber" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/missingNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/movingCount" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/movingCount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/myPow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/nthUglyNumber" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/nthUglyNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/pathSum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/pathSum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/permutation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/prefixCount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/printNumbers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/replaceSpace.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/reverseLeftWords" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/reverseLeftWords.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/reverseList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/reversePairs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/reversePairs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/reverseWords" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/reverseWords.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/search_I" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/search_I.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/singleNumber" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/singleNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/singleNumbers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/singleNumbers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/spiralOrder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/spiralOrder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/strToInt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/strToInt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/translateNum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/translateNum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/treeToDoublyList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/validateStackSequences" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/validateStackSequences.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/verifyPostorder" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/verifyPostorder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/demo/demo1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/demo/demo2.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/leetcode/ricky/com/demo/demo1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/ricky/com/demo/demo1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/leetcode/ricky/com/demo/demo2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/ricky/com/demo/demo2.class" afterDir="false" />
     </list>
@@ -28,6 +183,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -67,7 +223,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -215,7 +371,13 @@
       <workItem from="1680186415857" duration="12000" />
       <workItem from="1680186454652" duration="9539000" />
       <workItem from="1680319539134" duration="1895000" />
-      <workItem from="1680326855982" duration="5085000" />
+      <workItem from="1680326855982" duration="7847000" />
+      <workItem from="1680437037535" duration="482000" />
+      <workItem from="1680445041871" duration="3799000" />
+      <workItem from="1680586643261" duration="2027000" />
+      <workItem from="1680599754743" duration="1935000" />
+      <workItem from="1680687949940" duration="6538000" />
+      <workItem from="1680798635866" duration="406000" />
     </task>
     <task id="LOCAL-00001" summary="mirrorTree">
       <created>1676912932886</created>
@@ -224,11 +386,30 @@
       <option name="project" value="LOCAL" />
       <updated>1676912932887</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="mirrorTree">
+      <created>1680348990295</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680348990295</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="mirrorTree" />
