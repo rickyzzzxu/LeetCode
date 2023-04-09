@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c063a567-29af-4f08-92e4-1c9f3890fec3" name="Changes" comment="mirrorTree">
-      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/lowestCommonAncestor.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/lowestCommonAncestor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/maximalSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/maximalSquare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/demo/demo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/demo/demo1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/ricky/com/demo/demo1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/ricky/com/demo/demo1.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +222,9 @@
       <workItem from="1680798635866" duration="406000" />
       <workItem from="1680833864586" duration="2046000" />
       <workItem from="1680843924041" duration="17000" />
-      <workItem from="1680846706085" duration="1837000" />
+      <workItem from="1680846706085" duration="2465000" />
+      <workItem from="1680888752922" duration="1983000" />
+      <workItem from="1681029816135" duration="976000" />
     </task>
     <task id="LOCAL-00001" summary="mirrorTree">
       <created>1676912932886</created>
