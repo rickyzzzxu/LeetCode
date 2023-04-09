@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c063a567-29af-4f08-92e4-1c9f3890fec3" name="Changes" comment="mirrorTree">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/maximalSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/maximalSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/demo/demo1.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/demo/demo1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/leetcode/ricky/com/demo/demo1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/leetcode/ricky/com/demo/demo1.class" afterDir="false" />
-    </list>
+    <list default="true" id="c063a567-29af-4f08-92e4-1c9f3890fec3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -224,7 +219,7 @@
       <workItem from="1680843924041" duration="17000" />
       <workItem from="1680846706085" duration="2465000" />
       <workItem from="1680888752922" duration="1983000" />
-      <workItem from="1681029816135" duration="976000" />
+      <workItem from="1681029816135" duration="1827000" />
     </task>
     <task id="LOCAL-00001" summary="mirrorTree">
       <created>1676912932886</created>
@@ -240,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680348990295</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="maximalSquare">
+      <created>1681032668105</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681032668105</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,7 +262,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="mirrorTree" />
-    <option name="LAST_COMMIT_MESSAGE" value="mirrorTree" />
+    <MESSAGE value="maximalSquare" />
+    <option name="LAST_COMMIT_MESSAGE" value="maximalSquare" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
