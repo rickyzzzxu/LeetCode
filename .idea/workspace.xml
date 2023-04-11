@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c063a567-29af-4f08-92e4-1c9f3890fec3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/countBits.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/countBits.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +224,7 @@
       <workItem from="1681029816135" duration="5915000" />
       <workItem from="1681058981048" duration="4565000" />
       <workItem from="1681138705079" duration="604000" />
-      <workItem from="1681188478527" duration="2889000" />
+      <workItem from="1681188478527" duration="4224000" />
     </task>
     <task id="LOCAL-00001" summary="mirrorTree">
       <created>1676912932886</created>
