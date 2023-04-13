@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c063a567-29af-4f08-92e4-1c9f3890fec3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/letterCombinations" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/letterCombinations" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/letterCombinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/letterCombinations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/longestPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/longestPalindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/demo/demo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/demo/demo2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +58,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AAA/高校食堂供应链管理系统_gg60j/springbootgg60j" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../LeetCodeReview" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -62,7 +66,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="leetcode.id" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -229,7 +233,8 @@
       <workItem from="1681232821787" duration="314000" />
       <workItem from="1681233166499" duration="122000" />
       <workItem from="1681233315338" duration="717000" />
-      <workItem from="1681288013337" duration="1185000" />
+      <workItem from="1681288013337" duration="2026000" />
+      <workItem from="1681318757087" duration="3645000" />
     </task>
     <task id="LOCAL-00001" summary="mirrorTree">
       <created>1676912932886</created>
