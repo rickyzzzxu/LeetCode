@@ -15,20 +15,26 @@ public class groupAnagrams {
      字母异位词 是由重新排列源单词的字母得到的一个新单词，所有源单词中的字母通常恰好只用一次。*/
     class Solution {
         public List<List<String>> groupAnagrams(String[] strs) {
+            List<List<String>> res = new ArrayList<>();
+            if (strs == null || strs.length == 0) {
+                return res;
+            }
+
             HashMap<String, List<String>> map = new HashMap<>();
             for (int i = 0; i < strs.length; i++) {
                 char[] arr = strs[i].toCharArray();
                 Arrays.sort(arr);
-                String key = String.valueOf(arr);
-                if (!map.containsKey(key)) {
-                    map.put(key, new ArrayList<>());
-                    map.get(key).add(strs[i]);
+                String temp = String.valueOf(arr);
+                if (!map.containsKey(temp)) {
+                    map.put(temp, new ArrayList<>());
+                    map.get(temp).add(strs[i]);
                 } else {
-                    map.get(key).add(strs[i]);
+                    map.get(temp).add(strs[i]);
                 }
             }
 
-            return new ArrayList<>(map.values());
+            res.addAll(map.values());
+            return res;
         }
     }
 }

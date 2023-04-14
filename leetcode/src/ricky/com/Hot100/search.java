@@ -17,6 +17,7 @@ public class search {
         public int search(int[] nums, int target) {
             int l = 0;
             int r = nums.length - 1;
+            //需要仔细考虑边界情况
             while (l <= r) {
                 int mid = (l - r) / 2 + r;
                 if (nums[mid] == target) {

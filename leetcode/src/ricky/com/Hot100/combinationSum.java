@@ -25,6 +25,7 @@ public class combinationSum {
         }
 
         private void dfs(int[] candidates, int k, int target) {
+            //一定要有退出条件
             if (target < 0) {
                 return;
             }

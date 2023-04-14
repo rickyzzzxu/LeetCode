@@ -19,19 +19,23 @@ public class generateParenthesis {
             return res;
         }
 
-        private void dfs(StringBuilder sb, int left, int right, int n) {
-            if (left > n || right > n || left < right) {
+        private void dfs(StringBuilder sb, int l, int r, int n) {
+            //当右括号多余左括号时退出
+            if (l > n || r > n || r > l) {
                 return;
             }
 
-            if (sb.length() == 2 * n) {
+            if (sb.length() == n * 2) {
                 res.add(sb.toString());
             }
 
-            dfs(sb.append('('), left + 1, right, n);
+            //先拼个左括号
+            sb.append('(');
+            dfs(sb, l + 1, r, n);
             sb.deleteCharAt(sb.length() - 1);
-
-            dfs(sb.append(')'), left, right + 1, n);
+            //然后拼个右括号
+            sb.append(')');
+            dfs(sb, l, r + 1, n);
             sb.deleteCharAt(sb.length() - 1);
         }
     }

@@ -13,26 +13,37 @@ public class permute {
     class Solution {
         List<List<Integer>> res = new ArrayList<>();
         List<Integer> list = new ArrayList<>();
+        boolean[] visited;
 
         public List<List<Integer>> permute(int[] nums) {
-            dfs(nums);
+            if (nums == null || nums.length == 0) {
+                return res;
+            }
+
+            visited = new boolean[nums.length];
+            dfs(nums, 0);
             return res;
         }
 
-        private void dfs(int[] nums) {
+        private void dfs(int[] nums, int k) {
+            //退出条件一定要注意
             if (nums.length == list.size()) {
                 res.add(new ArrayList<>(list));
                 return;
             }
 
             for (int i = 0; i < nums.length; i++) {
-                if (list.contains(nums[i])) {
+                //也可以用这个，空间复杂度会降低
+                /*if (list.contains(nums[i])) {
                     continue;
+                }*/
+                if (!visited[i]) {
+                    visited[i] = true;
+                    list.add(nums[i]);
+                    dfs(nums, i + 1);
+                    list.remove(list.size() - 1);
+                    visited[i] = false;
                 }
-
-                list.add(nums[i]);
-                dfs(nums);
-                list.remove(list.size() - 1);
             }
         }
     }

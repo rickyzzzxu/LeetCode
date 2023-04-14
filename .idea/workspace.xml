@@ -6,10 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="c063a567-29af-4f08-92e4-1c9f3890fec3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/letterCombinations" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/letterCombinations" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/letterCombinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/letterCombinations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/longestPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/longestPalindrome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/demo/demo2.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/demo/demo2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/combinationSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/combinationSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/generateParenthesis.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/generateParenthesis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/groupAnagrams.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/groupAnagrams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/longestValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/longestValidParentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/nextPermutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/nextPermutation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/permute.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/permute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/rotate.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/rotate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/search.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/search.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/trap.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/trap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/demo/demo1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/demo/demo2.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -234,7 +241,7 @@
       <workItem from="1681233166499" duration="122000" />
       <workItem from="1681233315338" duration="717000" />
       <workItem from="1681288013337" duration="2026000" />
-      <workItem from="1681318757087" duration="3645000" />
+      <workItem from="1681318757087" duration="18071000" />
     </task>
     <task id="LOCAL-00001" summary="mirrorTree">
       <created>1676912932886</created>
