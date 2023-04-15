@@ -11,15 +11,25 @@ public class canJump {
     判断你是否能够到达最后一个下标。*/
     class Solution {
         public boolean canJump(int[] nums) {
-            int maxLen = nums[0];
+            if (nums == null || nums.length == 0) {
+                return true;
+            }
+
+            //jumpMax表示能跳的最远距离
+            int jumpMax = nums[0];
             for (int i = 0; i < nums.length; i++) {
-                if (i <= maxLen) {
-                    maxLen = Math.max(maxLen, i + nums[i]);
+                //前提是可以跳到第i个位置
+                if (i <= jumpMax) {
+                    jumpMax = Math.max(jumpMax, i + nums[i]);
+                } else {
+                    return false;
                 }
 
-                if (maxLen >= nums.length - 1) {
+                //跳到了结尾就可以结束了
+                if (jumpMax >= nums.length - 1) {
                     return true;
                 }
+
             }
 
             return false;

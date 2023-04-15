@@ -30,6 +30,7 @@ public class merge {
                     end = Math.max(end, intervals[i][1]);
                 }
             }
+            //别忘了把最后一个答案也加进去
             list.add(new int[]{start, end});
 
             return list.toArray(new int[0][]);

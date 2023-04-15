@@ -11,39 +11,42 @@ public class minDistance {
     插入一个字符
     删除一个字符
     替换一个字符*/
+
+
     class Solution {
         public int minDistance(String word1, String word2) {
-            if (word1.length() == 0 && word2.length() == 0) {
-                return 0;
-            }
-
             if (word1.length() == 0 || word2.length() == 0) {
                 return word1.length() == 0 ? word2.length() : word1.length();
             }
 
-            //int[i][j],前面的表示word1,后面的表示word2
-            int[][] dp = new int[word1.length() + 1][word2.length() + 1];
+            int m = word1.length();
+            int n = word2.length();
+            //dp[i][j]表示word1第i个位置和word2第j个位置匹配上的最少操作数
+            int[][] dp = new int[m + 1][n + 1];
+            //都为空时
             dp[0][0] = 0;
-            //word2为0
-            for (int i = 1; i <= word1.length(); i++) {
+            //word2为空，word1不为空
+            for (int i = 1; i <= m; i++) {
                 dp[i][0] = dp[i - 1][0] + 1;
             }
-
-            for (int i = 1; i <= word2.length(); i++) {
+            //word1为空，word2不为空
+            for (int i = 1; i <= n; i++) {
                 dp[0][i] = dp[0][i - 1] + 1;
             }
 
-            for (int i = 1; i <= word1.length(); i++) {
-                for (int j = 1; j <= word2.length(); j++) {
+            for (int i = 1; i <= m; i++) {
+                for (int j = 1; j <= n; j++) {
                     if (word1.charAt(i - 1) == word2.charAt(j - 1)) {
+                        //i和j位置上匹配上了，就等于前一个位置的操作数
                         dp[i][j] = dp[i - 1][j - 1];
                     } else {
+                        //插入一个字符、删除一个字符、替换一个字符，取三者中的最小操作数，最后+1
                         dp[i][j] = Math.min(Math.min(dp[i - 1][j], dp[i][j - 1]), dp[i - 1][j - 1]) + 1;
                     }
                 }
             }
 
-            return dp[word1.length()][word2.length()];
+            return dp[m][n];
         }
     }
 }
