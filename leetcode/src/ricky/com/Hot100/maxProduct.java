@@ -17,8 +17,6 @@ public class maxProduct {
             int[] dpMin = new int[nums.length];
             dpMax[0] = nums[0];
             dpMin[0] = nums[0];
-            int maxNum = nums[0];
-            int minNum = nums[0];
             int res = nums[0];
             for (int i = 1; i < nums.length; i++) {
                 dpMax[i] = Math.max(nums[i], Math.max(dpMax[i - 1] * nums[i], dpMin[i - 1] * nums[i]));

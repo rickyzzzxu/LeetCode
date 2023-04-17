@@ -16,12 +16,12 @@ public class LRUCache {
     如果不存在，则向缓存中插入该组 key-value 。如果插入操作导致关键字数量超过 capacity ，
     则应该 逐出 最久未使用的关键字。
     函数 get 和 put 必须以 O(1) 的平均时间复杂度运行。*/
-    DoubleLinkedList linkedList;
+    DoubleLinkedList doubleLinkedList;
     HashMap<Integer, Node> map;
     int capacity;
 
     public LRUCache(int capacity) {
-        linkedList = new DoubleLinkedList();
+        doubleLinkedList = new DoubleLinkedList();
         map = new HashMap<>();
         this.capacity = capacity;
     }
@@ -30,8 +30,10 @@ public class LRUCache {
         if (!map.containsKey(key)) {
             return -1;
         } else {
-            put(key, map.get(key).value);
-            return map.get(key).value;
+            Node cur = map.get(key);
+            doubleLinkedList.delete(cur);
+            doubleLinkedList.addFirst(cur);
+            return map.get(key).val;
         }
     }
 
@@ -39,30 +41,29 @@ public class LRUCache {
         Node newNode = new Node(key, value);
         if (!map.containsKey(key)) {
             if (map.size() == capacity) {
-                int k = linkedList.deleteLast();
+                int k = doubleLinkedList.deleteLast();
                 map.remove(k);
             }
-
+            doubleLinkedList.addFirst(newNode);
             map.put(key, newNode);
-            linkedList.addFirst(newNode);
         } else {
-            linkedList.delete(map.get(key));
-            linkedList.addFirst(newNode);
+            //删除旧的node
+            doubleLinkedList.delete(map.get(key));
+            doubleLinkedList.addFirst(newNode);
             map.put(key, newNode);
         }
     }
-
 }
 
 class Node {
     int key;
-    int value;
+    int val;
     Node pre;
     Node next;
 
-    public Node(int key, int value) {
+    public Node(int key, int val) {
         this.key = key;
-        this.value = value;
+        this.val = val;
     }
 }
 
@@ -78,20 +79,21 @@ class DoubleLinkedList {
     }
 
     public void addFirst(Node node) {
-        node.pre = head;
         node.next = head.next;
+        node.pre = head;
         head.next.pre = node;
         head.next = node;
+    }
+
+    public int delete(Node node) {
+        node.pre.next = node.next;
+        node.next.pre = node.pre;
+        return node.key;
     }
 
     public int deleteLast() {
         return delete(tail.pre);
     }
 
-    public int delete(Node node) {
-        node.next.pre = node.pre;
-        node.pre.next = node.next;
-        return node.key;
-    }
 }
 

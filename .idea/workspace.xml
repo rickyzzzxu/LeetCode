@@ -6,13 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="c063a567-29af-4f08-92e4-1c9f3890fec3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/canJump.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/canJump.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/merge.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/merge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/minDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/minDistance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/minPathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/minPathSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/minWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/minWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/uniquePaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/uniquePaths.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/exist.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/exist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SwordOffer/src/com/ricky/tree/JZ36.java" beforeDir="false" afterPath="$PROJECT_DIR$/SwordOffer/src/com/ricky/tree/JZ36.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/LRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/LRUCache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/detectCycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/detectCycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/flatten.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/flatten.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/largestRectangleArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/largestRectangleArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/levelOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/levelOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/longestConsecutive.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/longestConsecutive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/maxPathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/maxPathSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/maxProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/maxProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/maxProfit.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/maxProfit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/numTrees.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/numTrees.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,7 +241,7 @@
       <workItem from="1681233166499" duration="122000" />
       <workItem from="1681233315338" duration="717000" />
       <workItem from="1681288013337" duration="2026000" />
-      <workItem from="1681318757087" duration="31187000" />
+      <workItem from="1681318757087" duration="53300000" />
     </task>
     <task id="LOCAL-00001" summary="mirrorTree">
       <created>1676912932886</created>

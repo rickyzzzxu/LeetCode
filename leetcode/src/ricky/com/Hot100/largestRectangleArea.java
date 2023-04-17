@@ -10,29 +10,38 @@ public class largestRectangleArea {
     求在该柱状图中，能够勾勒出来的矩形的最大面积。*/
     class Solution {
         public int largestRectangleArea(int[] heights) {
-            int[] leftMin = new int[heights.length];
-            int[] rigthMin = new int[heights.length];
+            if (heights == null || heights.length == 0) {
+                return 0;
+            }
+
+            int n = heights.length;
+            //左边第一个高度小于第i个矩阵的矩阵
+            int[] leftMin = new int[n];
+            int[] rightMin = new int[n];
             leftMin[0] = -1;
-            rigthMin[heights.length - 1] = heights.length;
+            rightMin[n - 1] = n;
             int res = 0;
-            for (int i = 1; i < heights.length; i++) {
-                int temp = i - 1;
-                while (temp >= 0 && heights[temp] >= heights[i]) {
-                    temp = leftMin[temp];
+            for (int i = 1; i < n; i++) {
+                //第i个前面的一个
+                int pre = i - 1;
+                //>=i就接着往前找
+                while (pre >= 0 && heights[pre] >= heights[i]) {
+                    //heights[pre] >= heights[i]，说明
+                    pre = leftMin[pre];
                 }
-                leftMin[i] = temp;
+                leftMin[i] = pre;
             }
 
-            for (int i = heights.length - 2; i >= 0; i--) {
-                int temp = i + 1;
-                while (temp < heights.length && heights[temp] >= heights[i]) {
-                    temp = rigthMin[temp];
+            for (int i = n - 2; i >= 0; i--) {
+                int after = i + 1;
+                while (after < n && heights[after] >= heights[i]) {
+                    after = rightMin[after];
                 }
-                rigthMin[i] = temp;
+                rightMin[i] = after;
             }
 
-            for (int i = 0; i < heights.length; i++) {
-                res = Math.max(res, heights[i] * (rigthMin[i] - leftMin[i] - 1));
+            for (int i = 0; i < n; i++) {
+                res = Math.max(res, heights[i] * (rightMin[i] - leftMin[i] - 1));
             }
 
             return res;

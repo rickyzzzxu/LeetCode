@@ -55,7 +55,7 @@ public class levelOrder {
                     }
                 }
 
-                res.add(new ArrayList<>(list));
+                res.add(list);
             }
 
             return res;

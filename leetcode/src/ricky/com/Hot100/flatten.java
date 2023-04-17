@@ -40,9 +40,11 @@ public class flatten {
 
             preOrder(root);
             TreeNode head = list.get(0);
+            //因为list里面的TreeNode有些是左右子树都有的，所以必须给他们left置空
             head.left = null;
             TreeNode cur = head;
             for (int i = 1; i < list.size(); i++) {
+                //left也要置空
                 cur.left = null;
                 cur.right = list.get(i);
                 cur = cur.right;
