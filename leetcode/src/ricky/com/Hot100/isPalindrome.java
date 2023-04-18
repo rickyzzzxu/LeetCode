@@ -26,32 +26,41 @@ public class isPalindrome {
 
     class Solution {
         public boolean isPalindrome(ListNode head) {
+            if (head == null) {
+                return true;
+            }
+
+            ListNode fast = head;
+            ListNode slow = head;
+            //后一半链表的起始位置的前一个节点，因为要让这个节点的next指向null
             ListNode pre = new ListNode(-1);
             pre.next = head;
-            ListNode slow = head;
-            ListNode fast = head;
             while (fast != null && fast.next != null) {
-                slow = slow.next;
                 fast = fast.next.next;
+                slow = slow.next;
                 pre = pre.next;
             }
 
             pre.next = null;
-            slow = reverse(slow);
-            while (head != null && slow != null) {
-                if (head.val != slow.val) {
+            ListNode right = reverse(slow);
+            while (head != null && right != null) {
+                if (head.val != right.val) {
                     return false;
                 }
                 head = head.next;
-                slow = slow.next;
+                right = right.next;
             }
 
             return true;
         }
 
-        private ListNode reverse(ListNode head) {
+        private ListNode reverse(ListNode slow) {
+            if (slow == null) {
+                return null;
+            }
+
             ListNode pre = null;
-            ListNode cur = head;
+            ListNode cur = slow;
             ListNode temp = cur.next;
             while (cur != null) {
                 temp = cur.next;
