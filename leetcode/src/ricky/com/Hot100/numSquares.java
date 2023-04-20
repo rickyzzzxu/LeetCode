@@ -15,6 +15,7 @@ public class numSquares {
             dp[0] = 0;
             //由dp[i - j * j]到dp[i]只需要一个j*j，就是一步
             for (int i = 1; i <= n; i++) {
+                //最坏的情况，全是一
                 dp[i] = i;
                 for (int j = 1; i - j * j >= 0; j++) {
                     dp[i] = Math.min(dp[i], dp[i - j * j] + 1);

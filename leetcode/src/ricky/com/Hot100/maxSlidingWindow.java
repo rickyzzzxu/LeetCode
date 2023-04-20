@@ -17,19 +17,19 @@ public class maxSlidingWindow {
             int[] res = new int[nums.length - k + 1];
             Deque<Integer> queue = new LinkedList<>();
             int index = 0;
-            for(int i = 0; i < nums.length; i++){
+            for (int i = 0; i < nums.length; i++) {
                 //维护一个递减的队列：queueFirst（头）-> queueLast（尾）
-                while(!queue.isEmpty() && nums[i] >= nums[queue.peekLast()]){
+                while (!queue.isEmpty() && nums[i] >= nums[queue.peekLast()]) {
                     queue.pollLast();
                 }
 
                 queue.addLast(i);
                 //一定是连续的下标
-                if(queue.peekLast() - queue.peekFirst() + 1> k){
+                if (queue.peekLast() - queue.peekFirst() + 1 > k) {
                     queue.pollFirst();
                 }
 
-                if(i + 1 >= k){
+                if (i + 1 >= k) {
                     res[index++] = nums[queue.peekFirst()];
                 }
             }

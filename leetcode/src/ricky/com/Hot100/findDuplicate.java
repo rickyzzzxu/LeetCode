@@ -11,20 +11,27 @@ public class findDuplicate {
     你设计的解决方案必须 不修改 数组 nums 且只用常量级 O(1) 的额外空间。*/
     class Solution {
         public int findDuplicate(int[] nums) {
-            int fast = nums[nums[0]];
+            if (nums == null || nums.length == 0) {
+                return -1;
+            }
+
+            //初始化起始位置
             int slow = nums[0];
-            while (fast != slow) {
+            int fast = nums[nums[0]];
+            while (slow != fast) {
                 slow = nums[slow];
                 fast = nums[nums[fast]];
             }
 
+            //起始位置
             fast = 0;
-            while (fast != slow) {
-                fast = nums[fast];
+            while (slow != fast) {
                 slow = nums[slow];
+                fast = nums[fast];
             }
 
             return fast;
+
         }
     }
 }
