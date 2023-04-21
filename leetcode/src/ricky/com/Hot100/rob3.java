@@ -31,21 +31,25 @@ public class rob3 {
 
     class Solution {
         public int rob(TreeNode root) {
-            int[] res = afterOrder(root);
+            if (root == null) {
+                return 0;
+            }
+
+            //res[0]表示打劫root，res[1]表示不打劫root
+            int[] res = postOrder(root);
             return Math.max(res[0], res[1]);
         }
 
-        private int[] afterOrder(TreeNode root) {
+        private int[] postOrder(TreeNode root) {
             if (root == null) {
                 return new int[2];
             }
 
-            int[] left = afterOrder(root.left);
-            int[] right = afterOrder(root.right);
-            //res[0]表示打劫该节点，res[1]表示不打劫
+            int[] left = postOrder(root.left);
+            int[] right = postOrder(root.right);
             int[] res = new int[2];
-            res[0] = Math.max(left[0], left[1]) + Math.max(right[0], right[1]);
-            res[1] = left[0] + right[0] + root.val;
+            res[0] = root.val + left[1] + right[1];
+            res[1] = Math.max(left[0], left[1]) + Math.max(right[0], right[1]);
             return res;
         }
     }

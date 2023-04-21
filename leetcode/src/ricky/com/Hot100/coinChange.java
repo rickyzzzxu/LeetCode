@@ -17,6 +17,9 @@ public class coinChange {
             Arrays.fill(dp, 1, amount + 1, Integer.MAX_VALUE);
             for (int i = 1; i <= amount; i++) {
                 for (int j = 0; j < coins.length; j++) {
+                    //dp[i - coins[j]] != Integer.MAX_VALUE 表示如果减去当前硬币面值所得到的金额
+                    // i - coins[j] 有最优解，也就是说当前硬币可以被用来凑出金额 i。如果减去当前硬币面
+                    // 值所得到的金额 i - coins[j] 没有最优解，则说明当前硬币无法被用来凑出金额 i。
                     if (i - coins[j] >= 0 && dp[i - coins[j]] != Integer.MAX_VALUE) {
                         dp[i] = Math.min(dp[i], dp[i - coins[j]] + 1);
                     }
