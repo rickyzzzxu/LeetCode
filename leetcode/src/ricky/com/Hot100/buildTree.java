@@ -30,28 +30,31 @@ public class buildTree {
     }
 
     class Solution {
-        HashMap<Integer, Integer> map = new HashMap<>();
+        HashMap<Integer, Integer> map;
 
         public TreeNode buildTree(int[] preorder, int[] inorder) {
-            for (int i = 0; i < inorder.length; i++) {
-                map.put(inorder[i], i);
-            }
-
-            return f(preorder, 0, preorder.length - 1, inorder, 0, inorder.length - 1);
-        }
-
-        private TreeNode f(int[] preorder, int l1, int r1, int[] inorder, int l2, int r2) {
-            if (l1 > r1) {
+            if (preorder == null || preorder.length == 0) {  // 如果先序遍历数组为空，返回null
                 return null;
             }
 
-            TreeNode root = new TreeNode(preorder[l1]);
-            int i = map.get(preorder[l1]);
-            root.left = f(preorder, l1 + 1, l1 + i - l2, inorder, l2, i - 1);
-            root.right = f(preorder, l1 + i - l2 + 1, r1, inorder, i + 1, r2);
-            return root;
+            map = new HashMap<>();  // 初始化map
+            for (int i = 0; i < inorder.length; i++) {
+                map.put(inorder[i], i);  // 将中序遍历数组中每个值的索引存入map中
+            }
+            return f(preorder, 0, preorder.length - 1, inorder, 0, inorder.length - 1);
+        }
+
+        private TreeNode f(int[] pre, int l1, int r1, int[] inOrder, int l2, int r2) {
+            if (l1 > r1) {  // 如果左边界大于右边界，返回null
+                return null;
+            }
+
+            TreeNode root = new TreeNode(pre[l1]);  // 先序遍历数组的第一个值为根节点
+            int i = map.get(pre[l1]);  // 从map中获取根节点在中序遍历数组中的索引
+            root.left = f(pre, l1 + 1, i - l2 + l1, inOrder, l2, i - 1);  // 构建左子树
+            root.right = f(pre, i - l2 + l1 + 1, r1, inOrder, i + 1, r2);  // 构建右子树
+            return root;  // 返回根节点
         }
     }
-
 
 }

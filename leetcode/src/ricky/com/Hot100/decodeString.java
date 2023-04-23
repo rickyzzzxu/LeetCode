@@ -19,6 +19,7 @@ public class decodeString {
                 return "";
             }
 
+            //res是从里向外的
             StringBuilder res = new StringBuilder();
             int time = 0;
             //用来存放字符串重复的倍数
@@ -36,6 +37,7 @@ public class decodeString {
                 } else if (s.charAt(i) == ']') {
                     int topTime = times.pop();
                     StringBuilder tempString = new StringBuilder(topStrings.pop());
+                    //res是从里向外的
                     for (int j = 0; j < topTime; j++) {
                         tempString.append(res);
                     }
