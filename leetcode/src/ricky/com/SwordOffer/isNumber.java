@@ -26,6 +26,7 @@ public class isNumber {
                 if (Character.isDigit(s.charAt(i))) {
                     isNum = true;
                     // 为什么有括号，因为if里面只有出现了true，后面的就不会继续判断了
+                    //小数后面可以跟e
                 } else if ((s.charAt(i) == 'E' || s.charAt(i) == 'e') && !isE && isNum) {
                     isE = true;
                     isNum = false;

@@ -37,6 +37,8 @@ public class movingCount {
             dfs(i + 1, j, k);
             dfs(i, j - 1, k);
             dfs(i, j + 1, k);
+            //不能回头，所以不需要回溯
+            //visited[i][j] = false;
         }
 
         private int sum(int x) {

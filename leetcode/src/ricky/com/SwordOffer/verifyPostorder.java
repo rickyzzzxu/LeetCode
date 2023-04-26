@@ -6,31 +6,32 @@ public class verifyPostorder {
     假设输入的数组的任意两个数字都互不相同。*/
     class Solution {
         public boolean verifyPostorder(int[] postorder) {
-            if (postorder.length == 0) {
+            if (postorder == null || postorder.length == 0) {
                 return true;
             }
 
             return check(postorder, 0, postorder.length - 1);
         }
 
-        public boolean check(int[] postorder, int l, int r) {
+        private boolean check(int[] postOrder, int l, int r) {
             if (l > r) {
                 return true;
             }
 
-            int root = postorder[r];
-            int k = 0;
-            while (root > postorder[k]) {
-                k++;
+            int root = postOrder[r];
+            int index = l;
+            while (root > postOrder[index]) {
+                index++;
             }
 
-            for (int i = k; i < r; i++) {
-                if (root > postorder[i]) {
+            for (int i = index; i < r; i++) {
+                if (root > postOrder[i]) {
                     return false;
                 }
             }
 
-            return check(postorder, l, k - 1) && check(postorder, k, r - 1);
+            //左右子树都要递归检查一遍
+            return check(postOrder, l, index - 1) && check(postOrder, index, r - 1);
         }
     }
 }
