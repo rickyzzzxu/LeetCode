@@ -7,40 +7,49 @@ public class permutation {
     /*输入一个字符串，打印出该字符串中字符的所有排列。
     你可以以任意顺序返回这个字符串数组，但里面不能有重复元素。*/
     class Solution {
-        ArrayList<String> res = new ArrayList<>();
-        StringBuilder str = new StringBuilder();
+        ArrayList<String> list = new ArrayList<>();
+        StringBuilder sb = new StringBuilder();
         boolean[] visited;
+
         public String[] permutation(String s) {
-            char[] chars = s.toCharArray();
-            Arrays.sort(chars);
-            visited = new boolean[chars.length];
-            dfs(chars, 0);
-            String[] s1 = new String[res.size()];
-            for(int i = 0; i < s1.length; i++){
-                s1[i] = res.get(i);
+            if (s == null || s.length() == 0) {
+                return new String[0];
             }
 
-            return s1;
+            visited = new boolean[s.length()];
+            char[] str = s.toCharArray();
+            Arrays.sort(str);
+            dfs(str, 0);
+            String[] res = new String[list.size()];
+            for (int i = 0; i < list.size(); i++) {
+                res[i] = list.get(i);
+            }
+
+            return res;
+
         }
 
-        public void dfs(char[] chars, int k){
-            if(k == chars.length){
-                res.add(str.toString());
+        private void dfs(char[] str, int k) {
+            if (k == str.length) {
+                list.add(sb.toString());
+                return;
             }
 
-            for(int i = 0; i < chars.length; i++){
-                if(i > 0 && chars[i] == chars[i - 1] && visited[i - 1] == false){
+            for (int i = 0; i < str.length; i++) {
+                //同一路径上的话，就不用剪枝
+                if (i > 0 && !visited[i - 1] && str[i] == str[i - 1]) {
                     continue;
                 }
 
-                if(!visited[i]){
+                if (!visited[i]) {
                     visited[i] = true;
-                    str.append(chars[i]);
-                    dfs(chars, k + 1);
-                    str.deleteCharAt(str.length() - 1);
+                    sb.append(str[i]);
+                    dfs(str, k + 1);
                     visited[i] = false;
+                    sb.deleteCharAt(sb.length() - 1);
                 }
             }
+
         }
     }
 }

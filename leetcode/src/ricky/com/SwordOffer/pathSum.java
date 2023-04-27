@@ -46,14 +46,12 @@ public class pathSum {
 
             target -= root.val;
             list.add(root.val);
-
             if (target == 0 && root.left == null && root.right == null) {
                 res.add(new ArrayList<>(list));
             }
 
             dfs(root.left, target);
             dfs(root.right, target);
-
             list.remove(list.size() - 1);
         }
     }

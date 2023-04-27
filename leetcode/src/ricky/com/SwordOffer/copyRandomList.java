@@ -19,28 +19,30 @@ class Node {
     }
 }
 
-   class Solution {
-       public Node copyRandomList(Node head) {
-           if(head == null){
-               return null;
-           }
+    class Solution {
+        public Node copyRandomList(Node head) {
+            if (head == null) {
+                return null;
+            }
 
-           HashMap<Node, Node> map = new HashMap<>();
-           Node cur = head;
-           while(cur != null){
-               Node temp = new Node(cur.val);
-               map.put(cur, temp);
-               cur = cur.next;
-           }
+            HashMap<Node, Node> map = new HashMap<>();
+            Node cur = head;
+            while (cur != null) {
+                Node temp = new Node(cur.val);
+                map.put(cur, temp);
+                cur = cur.next;
+            }
 
-           Node cur1 = head;
-           while(cur1 != null){
-               map.get(cur1).next = map.get(cur1.next);
-               map.get(cur1).random = map.get(cur1.random);
-               cur1 = cur1.next;
-           }
+            Node newCur = head;
+            while (newCur != null) {
+                Node newTemp = map.get(newCur);
+                //必须指向新链表，不能覆盖原链表
+                newTemp.next = map.get(newCur.next);
+                newTemp.random = map.get(newCur.random);
+                newCur = newCur.next;
+            }
 
-           return map.get(head);
-       }
-   }
+            return map.get(head);
+        }
+    }
 }
