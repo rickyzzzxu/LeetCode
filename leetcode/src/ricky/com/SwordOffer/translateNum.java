@@ -11,20 +11,22 @@ public class translateNum {
     多少种不同的翻译方法。*/
     class Solution {
         public int translateNum(int num) {
-            char[] arr = String.valueOf(num).toCharArray();
-            int[] dp = new int[arr.length + 1];
+            String str = num + "";
+            int[] dp = new int[str.length() + 1];
             dp[0] = 1;
             dp[1] = 1;
-            for (int i = 2; i <= arr.length; i++) {
-                int temp = 10 * (arr[i - 2] - '0') + arr[i - 1] - '0';
-                if (temp > 9 && temp < 26) {
+            for (int i = 2; i <= str.length(); i++) {
+                int pre = Integer.parseInt(str.charAt(i - 2) + "");
+                int cur = pre * 10 + Integer.parseInt(str.charAt(i - 1) + "");
+                if (cur >= 10 && cur <= 25) {
+                    //dp[i]为前面组合和不组合的情况相加
                     dp[i] = dp[i - 2] + dp[i - 1];
                 } else {
                     dp[i] = dp[i - 1];
                 }
             }
 
-            return dp[arr.length];
+            return dp[str.length()];
         }
     }
 }

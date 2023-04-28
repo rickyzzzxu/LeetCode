@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c063a567-29af-4f08-92e4-1c9f3890fec3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/copyRandomList.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/copyRandomList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/majorityElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/majorityElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/pathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/pathSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/permutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/permutation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +62,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="leetcode.id" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -246,7 +242,8 @@
       <workItem from="1682488598301" duration="95000" />
       <workItem from="1682489150580" duration="599000" />
       <workItem from="1682489780896" duration="2627000" />
-      <workItem from="1682577625635" duration="4260000" />
+      <workItem from="1682577625635" duration="5955000" />
+      <workItem from="1682674747185" duration="596000" />
     </task>
     <task id="LOCAL-00001" summary="mirrorTree">
       <created>1676912932886</created>
