@@ -17,6 +17,7 @@ public class lengthOfLongestSubstring {
 
             int dp = 1;
             HashMap<Character, Integer> map = new HashMap<>();
+            //后面的for循环从1开始，所以要先加进去
             map.put(s.charAt(0), 0);
             int res = 1;
             for (int i = 1; i < s.length(); i++) {

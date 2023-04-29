@@ -12,52 +12,57 @@ public class reversePairs {
         int res = 0;
 
         public int reversePairs(int[] nums) {
-            if (nums.length < 2) {
+            if (nums == null || nums.length == 0) {
                 return 0;
             }
 
             mergeSort(nums, 0, nums.length - 1);
             return res;
-
         }
 
-        private void mergeSort(int[] nums, int left, int right) {
-            if (left == right) {
+        private void mergeSort(int[] nums, int l, int r) {
+            if (l >= r) {
                 return;
             }
 
-            int mid = (right - left) / 2 + left;
-            mergeSort(nums, left, mid);
-            mergeSort(nums, mid + 1, right);
-            merge(nums, left, mid, mid + 1, right);
+            int mid = (r - l) / 2 + l;
+            //mid是前半段的
+            mergeSort(nums, l, mid);
+            //mid+1是后半段的开始位置
+            mergeSort(nums, mid + 1, r);
+            merge(nums, l, mid, r);
         }
 
-        private void merge(int[] nums, int l1, int r1, int l2, int r2) {
-            int i = l1;
-            int j = l2;
-            int[] temp = new int[r2 - l1 + 1];
-            int k = 0;
-            while (i <= r1 && j <= r2) {
-                if (nums[i] > nums[j]) {
-                    temp[k++] = nums[j++];
-                    res += (r1 - i + 1);
+        private void merge(int[] nums, int l, int mid, int r) {
+            int i = l;
+            //初值为mid+1
+            int j = mid + 1;
+            int[] temp = new int[r - l + 1];
+            int index = 0;
+            while (i <= mid && j <= r) {
+                //=必须在这里
+                if (nums[i] <= nums[j]) {
+                    temp[index++] = nums[i++];
                 } else {
-                    temp[k++] = nums[i++];
+                    //只有nums[i] > nums[j]才能计算res
+                    res += mid - i + 1;
+                    temp[index++] = nums[j++];
                 }
             }
 
-            while (i <= r1) {
-                temp[k++] = nums[i++];
+            while (i <= mid) {
+                temp[index++] = nums[i++];
             }
 
-            while (j <= r2) {
-                temp[k++] = nums[j++];
+            while (j <= r) {
+                temp[index++] = nums[j++];
             }
 
-            k = 0;
-            for (i = l1; i <= r2; i++) {
-                nums[i] = temp[k++];
+            index = 0;
+            for (i = l; i <= r; i++) {
+                nums[i] = temp[index++];
             }
+
         }
     }
 }
