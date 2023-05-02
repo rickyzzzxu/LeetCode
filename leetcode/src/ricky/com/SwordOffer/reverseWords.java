@@ -10,23 +10,22 @@ public class reverseWords {
     一样处理。例如输入字符串"I am a student. "，则输出"student. a am I"。*/
     class Solution {
         public String reverseWords(String s) {
+            if (s == null || s.length() == 0) {
+                return "";
+            }
+
             s = s.trim();
             int i = s.length() - 1;
             int j = s.length() - 1;
-            StringBuilder str = new StringBuilder();
+            StringBuilder sb = new StringBuilder();
             while (i >= 0 && j >= 0) {
-                while (i >= 0 && s.charAt(i) != ' ') {
-                    i--;
-                }
-                str.append(s.substring(i + 1, j + 1) + " ");
+                while (i >= 0 && s.charAt(i) != ' ') i--;
+                sb.append(s.substring(i + 1, j + 1) + " ");
+                while (i >= 0 && s.charAt(i) == ' ') i--;
                 j = i;
-                while (i >= 0 && s.charAt(i) == ' ') {
-                    i--;
-                    j--;
-                }
             }
 
-            return str.toString().trim();
+            return sb.toString().trim();
         }
     }
 }

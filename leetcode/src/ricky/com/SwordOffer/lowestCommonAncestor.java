@@ -31,7 +31,7 @@ public class lowestCommonAncestor {
                 }
             }
 
-            return root;
+            return null;
 
         }
     }

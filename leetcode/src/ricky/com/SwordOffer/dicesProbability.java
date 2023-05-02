@@ -11,12 +11,15 @@ public class dicesProbability {
     class Solution {
         public double[] dicesProbability(int n) {
             int[][] dp = new int[n + 1][6 * n + 1];
+            //初始化n=1时
             for (int i = 1; i <= 6; i++) {
                 dp[1][i] = 1;
             }
 
             for (int i = 2; i <= n; i++) {
                 for (int j = i; j <= 6 * n; j++) {
+                    //dp[i][j]可以由i-1个骰子变过来，dp[2][4]=dp[1][1]+dp[1][2]+dp[1][3]+dp[1][4]的意思
+                    //是可以由dp[1][1]+一个骰子掷3过来，也可以由dp[1][2]+一个骰子掷2过来+...+
                     for (int k = 1; k <= 6; k++) {
                         if (j >= k) {
                             dp[i][j] += dp[i - 1][j - k];

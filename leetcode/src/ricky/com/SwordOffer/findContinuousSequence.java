@@ -1,6 +1,7 @@
 package ricky.com.SwordOffer;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @Author xdg
@@ -12,28 +13,41 @@ public class findContinuousSequence {
     序列内的数字由小到大排列，不同序列按照首个数字从小到大排列。*/
     class Solution {
         public int[][] findContinuousSequence(int target) {
-            ArrayList<int[]> list = new ArrayList<>();
-            int i = 1;
-            int j = 2;
+            if (target < 3) {
+                return new int[0][];
+            }
+
+            List<int[]> list = new ArrayList<>();
+            //记录起始位置
+            int head = 1;
+            //记录结束位置
+            int tail = 2;
             int sum = 0;
-            while (j < target) {
-                sum = (i + j) * (j - i + 1) / 2;
+            while (tail < target) {
+                sum = (head + tail) * (tail - head + 1) / 2;
                 if (sum == target) {
+                    int[] temp = new int[tail - head + 1];
                     int index = 0;
-                    int[] temp = new int[j - i + 1];
-                    for (int k = i; k <= j; k++) {
-                        temp[index++] = k;
+                    for (int i = head; i <= tail; i++) {
+                        temp[index++] = i;
                     }
-                    i++;
                     list.add(temp);
+                    //说明以head开头的序列结束了，head++
+                    head++;
                 } else if (sum > target) {
-                    i++;
+                    head++;
                 } else {
-                    j++;
+                    tail++;
                 }
             }
 
-            return list.toArray(new int[0][]);
+            int[][] res = new int[list.size()][];
+            for (int i = 0; i < list.size(); i++) {
+                res[i] = list.get(i);
+            }
+
+            return res;
+
         }
     }
 }

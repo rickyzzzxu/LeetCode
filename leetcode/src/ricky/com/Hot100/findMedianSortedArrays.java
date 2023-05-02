@@ -29,7 +29,7 @@ public class findMedianSortedArrays {
                 return num1[start1 + k - 1];
             }
 
-            //返回第一个数时
+            //返回第一个数时，找到时的退出条件
             if (k == 1) {
                 return Math.min(num1[start1], num2[start2]);
             }
