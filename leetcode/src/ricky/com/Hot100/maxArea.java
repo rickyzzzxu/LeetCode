@@ -12,16 +12,20 @@ public class maxArea {
     说明：你不能倾斜容器。*/
     class Solution {
         public int maxArea(int[] height) {
-            int i = 0;
-            int j = height.length - 1;
+            if (height == null || height.length < 2) {
+                return 0;
+            }
+
             int res = 0;
-            while (i < j) {
-                if (height[i] < height[j]) {
-                    res = Math.max(res, (j - i) * height[i]);
-                    i++;
+            int l = 0;
+            int r = height.length - 1;
+            while (l < r) {
+                if (height[l] < height[r]) {
+                    res = Math.max(res, (r - l) * height[l]);
+                    l++;
                 } else {
-                    res = Math.max(res, (j - i) * height[j]);
-                    j--;
+                    res = Math.max(res, (r - l) * height[r]);
+                    r--;
                 }
             }
 

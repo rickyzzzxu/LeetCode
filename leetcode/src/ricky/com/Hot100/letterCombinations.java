@@ -14,33 +14,31 @@ public class letterCombinations {
 
 
     class Solution {
-        String[] str = new String[]{"abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
         List<String> res = new ArrayList<>();
+        String[] str = {"abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+        StringBuilder sb = new StringBuilder();
 
         public List<String> letterCombinations(String digits) {
             if (digits == null || digits.length() == 0) {
                 return res;
             }
 
-            StringBuilder sb = new StringBuilder();
-            dfs(digits, sb, 0);
+            dfs(digits, 0);
             return res;
         }
 
-        private void dfs(String digits, StringBuilder sb, int k) {
-            if (k == digits.length()) {
+        private void dfs(String digits, int k) {
+            if (digits.length() == sb.length()) {
                 res.add(sb.toString());
                 return;
             }
 
-            //以每一个数字为起点，把每个元素对应的字符串中的每一个字符都遍历一遍
             int index = digits.charAt(k) - '2';
             for (int i = 0; i < str[index].length(); i++) {
                 sb.append(str[index].charAt(i));
-                dfs(digits, sb, k + 1);
+                dfs(digits, k + 1);
                 sb.deleteCharAt(sb.length() - 1);
             }
         }
-
     }
 }
