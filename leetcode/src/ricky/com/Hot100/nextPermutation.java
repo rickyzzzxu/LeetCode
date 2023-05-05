@@ -27,20 +27,20 @@ public class nextPermutation {
                 if (i == 0) {
                     Arrays.sort(nums);
                     return;
-                } else {
-                    //从后往前找到第一个降序的数字
-                    if (nums[i] > nums[i - 1]) {
-                        //对i-1后面的数字进行一个排序
-                        Arrays.sort(nums, i, nums.length);
-                        //从i-1后面的数字中找出第一个比nums[i-1]大的数字
-                        for (int j = i; j < nums.length; j++) {
-                            if (nums[j] > nums[i - 1]) {
-                                int temp = nums[j];
-                                nums[j] = nums[i - 1];
-                                nums[i - 1] = temp;
-                                //找到答案了就是直接返回
-                                return;
-                            }
+                }
+
+                //从后往前找到第一个降序的数字
+                if (nums[i] > nums[i - 1]) {
+                    //对i-1后面的数字进行一个排序
+                    Arrays.sort(nums, i, nums.length);
+                    //从i-1后面的数字中找出第一个比nums[i-1]大的数字
+                    for (int j = i; j < nums.length; j++) {
+                        if (nums[j] > nums[i - 1]) {
+                            int temp = nums[j];
+                            nums[j] = nums[i - 1];
+                            nums[i - 1] = temp;
+                            //找到答案了就是直接返回
+                            return;
                         }
                     }
                 }

@@ -22,14 +22,14 @@ public class groupAnagrams {
 
             HashMap<String, List<String>> map = new HashMap<>();
             for (int i = 0; i < strs.length; i++) {
-                char[] arr = strs[i].toCharArray();
-                Arrays.sort(arr);
-                String temp = String.valueOf(arr);
-                if (!map.containsKey(temp)) {
-                    map.put(temp, new ArrayList<>());
-                    map.get(temp).add(strs[i]);
+                char[] temp = strs[i].toCharArray();
+                Arrays.sort(temp);
+                String tempStr = String.valueOf(temp);
+                if (!map.containsKey(tempStr)) {
+                    map.put(tempStr, new ArrayList<>());
+                    map.get(tempStr).add(strs[i]);
                 } else {
-                    map.get(temp).add(strs[i]);
+                    map.get(tempStr).add(strs[i]);
                 }
             }
 
