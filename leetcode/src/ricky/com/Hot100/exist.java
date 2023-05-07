@@ -11,11 +11,21 @@ public class exist {
     */
     class Solution {
         boolean[][] visited;
+        int m;
+        int n;
 
         public boolean exist(char[][] board, String word) {
-            visited = new boolean[board.length][board[0].length];
-            for (int i = 0; i < board.length; i++) {
-                for (int j = 0; j < board[i].length; j++) {
+            if (board == null || board.length == 0) {
+                return false;
+            }
+
+            int m = board.length;
+            int n = board[0].length;
+            visited = new boolean[m][n];
+            this.m = m;
+            this.n = n;
+            for (int i = 0; i < m; i++) {
+                for (int j = 0; j < n; j++) {
                     if (dfs(board, word, i, j, 0)) {
                         return true;
                     }
@@ -26,7 +36,7 @@ public class exist {
         }
 
         private boolean dfs(char[][] board, String word, int i, int j, int k) {
-            if (i < 0 || j < 0 || i >= board.length || j >= board[0].length || visited[i][j] || word.charAt(k) != board[i][j]) {
+            if (i < 0 || j < 0 || i >= m || j >= n || visited[i][j] || word.charAt(k) != board[i][j]) {
                 return false;
             }
 
@@ -35,12 +45,12 @@ public class exist {
             }
 
             visited[i][j] = true;
-            boolean flag = dfs(board, word, i + 1, j, k + 1)
-                    || dfs(board, word, i - 1, j, k + 1)
+            boolean ans = dfs(board, word, i + 1, j, k + 1)
                     || dfs(board, word, i, j + 1, k + 1)
+                    || dfs(board, word, i - 1, j, k + 1)
                     || dfs(board, word, i, j - 1, k + 1);
             visited[i][j] = false;
-            return flag;
+            return ans;
         }
     }
 

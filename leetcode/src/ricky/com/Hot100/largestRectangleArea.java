@@ -40,6 +40,7 @@ public class largestRectangleArea {
                 rightMin[i] = after;
             }
 
+            //因为是计算有多少个间隔，所以要减一
             for (int i = 0; i < n; i++) {
                 res = Math.max(res, heights[i] * (rightMin[i] - leftMin[i] - 1));
             }

@@ -13,7 +13,7 @@ public class minWindow {
 
     class Solution {
         public String minWindow(String s, String t) {
-            if (t == null || t.length() == 0) {
+            if (s == null || s.length() == 0) {
                 return "";
             }
 
@@ -50,6 +50,7 @@ public class minWindow {
 
                     //在将字符移出窗口之前，先要加1，不然移出后就晚了
                     arr[s.charAt(l)]++;
+                    //如果移出去的字符是t串中的，total++
                     if (arr[s.charAt(l)] > 0) {
                         total++;
                     }

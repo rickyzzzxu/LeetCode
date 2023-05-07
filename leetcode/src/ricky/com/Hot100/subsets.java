@@ -26,6 +26,7 @@ public class subsets {
                 return;
             }
 
+            //先把1开头的算完，再算2开头的
             for (int i = k; i < nums.length; i++) {
                 list.add(nums[i]);
                 res.add(new ArrayList<>(list));
