@@ -6,13 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c063a567-29af-4f08-92e4-1c9f3890fec3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/canJump.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/canJump.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/exist.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/exist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/largestRectangleArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/largestRectangleArea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/merge.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/merge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/minDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/minDistance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/minWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/minWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/subsets.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/subsets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/buildTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/buildTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/maxPathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/maxPathSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/wordBreak.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/wordBreak.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -263,7 +259,10 @@
       <workItem from="1683185446570" duration="5890000" />
       <workItem from="1683281914359" duration="4071000" />
       <workItem from="1683372912004" duration="7861000" />
-      <workItem from="1683470535615" duration="592000" />
+      <workItem from="1683470535615" duration="1337000" />
+      <workItem from="1683472375357" duration="126000" />
+      <workItem from="1683472520642" duration="2321000" />
+      <workItem from="1683521264633" duration="3932000" />
     </task>
     <task id="LOCAL-00001" summary="mirrorTree">
       <created>1676912932886</created>

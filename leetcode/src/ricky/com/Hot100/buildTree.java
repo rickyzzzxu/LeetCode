@@ -45,7 +45,7 @@ public class buildTree {
         }
 
         private TreeNode f(int[] pre, int l1, int r1, int[] inOrder, int l2, int r2) {
-            if (l1 > r1) {  // 如果左边界大于右边界，返回null
+            if (l1 > r1) {  // 如果左边界大于右边界，返回null，不能有=
                 return null;
             }
 

@@ -30,12 +30,13 @@ public class maxPathSum {
         }
     }
 
+
     class Solution {
         int res = Integer.MIN_VALUE;
 
         public int maxPathSum(TreeNode root) {
             if (root == null) {
-                return 0;
+                return -1;
             }
 
             postOrder(root);
@@ -48,13 +49,13 @@ public class maxPathSum {
             }
 
             // 计算左子树的最大路径和和右子树的最大路径和
-            int left = postOrder(root.left);
-            int right = postOrder(root.right);
+            int l = postOrder(root.left);
+            int r = postOrder(root.right);
             // 计算以当前节点为根节点的最大路径和，并更新全局最大路径和
-            int temp = Math.max(root.val, root.val + Math.max(left, right));
-            res = Math.max(res, Math.max(temp, root.val + left + right));
+            int tempMax = Math.max(root.val, root.val + Math.max(l, r));
+            res = Math.max(res, Math.max(tempMax, root.val + l + r));
             // 返回以当前节点为起点的路径
-            return temp;
+            return tempMax;
         }
     }
 }
