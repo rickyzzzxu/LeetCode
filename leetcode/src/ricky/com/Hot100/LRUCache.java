@@ -16,12 +16,12 @@ public class LRUCache {
     如果不存在，则向缓存中插入该组 key-value 。如果插入操作导致关键字数量超过 capacity ，
     则应该 逐出 最久未使用的关键字。
     函数 get 和 put 必须以 O(1) 的平均时间复杂度运行。*/
-    DoubleLinkedList doubleLinkedList;
+    DoubleLinkedList linkedList;
     HashMap<Integer, Node> map;
     int capacity;
 
     public LRUCache(int capacity) {
-        doubleLinkedList = new DoubleLinkedList();
+        linkedList = new DoubleLinkedList();
         map = new HashMap<>();
         this.capacity = capacity;
     }
@@ -30,40 +30,43 @@ public class LRUCache {
         if (!map.containsKey(key)) {
             return -1;
         } else {
-            Node cur = map.get(key);
-            doubleLinkedList.delete(cur);
-            doubleLinkedList.addFirst(cur);
-            return map.get(key).val;
+            Node temp = map.get(key);
+            linkedList.delete(temp);
+            linkedList.addFirst(temp);
+            return temp.val;
         }
     }
 
     public void put(int key, int value) {
-        Node newNode = new Node(key, value);
+        Node temp = new Node(key, value);
         if (!map.containsKey(key)) {
-            if (map.size() == capacity) {
-                int k = doubleLinkedList.deleteLast();
+            //可以优化，提取公共部分
+            if (map.size() >= capacity) {
+                int k = linkedList.deleteLast();
                 map.remove(k);
+                linkedList.addFirst(temp);
+                map.put(key, temp);
+            } else {
+                linkedList.addFirst(temp);
+                map.put(key, temp);
             }
-            doubleLinkedList.addFirst(newNode);
-            map.put(key, newNode);
         } else {
-            //删除旧的node
-            doubleLinkedList.delete(map.get(key));
-            doubleLinkedList.addFirst(newNode);
-            map.put(key, newNode);
+            linkedList.delete(map.get(key));
+            linkedList.addFirst(temp);
+            map.put(key, temp);
         }
     }
 }
 
 class Node {
-    int key;
-    int val;
     Node pre;
     Node next;
+    int key;
+    int val;
 
-    public Node(int key, int val) {
+    public Node(int key, int value) {
         this.key = key;
-        this.val = val;
+        this.val = value;
     }
 }
 
@@ -94,6 +97,4 @@ class DoubleLinkedList {
     public int deleteLast() {
         return delete(tail.pre);
     }
-
 }
-

@@ -12,11 +12,6 @@ public class detectCycle {
     如果 pos 是 -1，则在该链表中没有环。注意：pos 不作为参数进行传递，仅仅是为了标识链表的实际情况。
     不允许修改 链表。*/
 
-
-
-
-
-
     class ListNode {
         int val;
         ListNode next;
@@ -48,26 +43,17 @@ public class detectCycle {
             if (!flag) {
                 return null;
             } else {
-                int size = 1;
-                fast = fast.next;
-                while (fast != slow) {
-                    fast = fast.next;
-                    size++;
-                }
-
+                //从头结点到环的起始节点为a，环的大小为b，第一次相遇f=2s，s=nb,
+                //那么所有走到链表入口节点时的步数是：k=a+nb，此时slow已走nb，fast从头开始，
+                //走到入口，走了a，此时slow也走了a+nb，所以相遇点就是入口节点
                 fast = head;
-                slow = head;
-                for (int i = 0; i < size; i++) {
-                    fast = fast.next;
-                }
-
                 while (fast != slow) {
                     fast = fast.next;
                     slow = slow.next;
                 }
+
                 return fast;
             }
-
         }
     }
 }

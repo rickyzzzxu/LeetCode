@@ -17,35 +17,34 @@ public class MinStack {
     int getMin() 获取堆栈中的最小元素。*/
     class MinStack1 {
         Stack<Integer> stack;
-        Stack<Integer> stackMin;
+        Stack<Integer> minStack;
 
         public MinStack1() {
             stack = new Stack<>();
-            stackMin = new Stack<>();
+            minStack = new Stack<>();
         }
 
         public void push(int val) {
             stack.push(val);
-            if (stackMin.isEmpty() || stackMin.peek() >= val) {
-                stackMin.push(val);
+            if (minStack.isEmpty() || val <= minStack.peek()) {
+                minStack.push(val);
             }
         }
 
         public void pop() {
-            //equals比较的是内容
-            if (stack.peek().equals(stackMin.peek())) {
-                stackMin.pop();
+            if (stack.peek().equals(minStack.peek())) {
+                minStack.pop();
             }
 
             stack.pop();
         }
 
-        public int top() {
+        public int top() throws Exception {
             return stack.peek();
         }
 
         public int getMin() {
-            return stackMin.peek();
+            return minStack.peek();
         }
     }
 
