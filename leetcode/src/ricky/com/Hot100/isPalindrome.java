@@ -42,6 +42,7 @@ public class isPalindrome {
             }
 
             pre.next = null;
+            //必须传slow，考虑到奇偶数的问题
             ListNode right = reverse(slow);
             while (head != null && right != null) {
                 if (head.val != right.val) {
