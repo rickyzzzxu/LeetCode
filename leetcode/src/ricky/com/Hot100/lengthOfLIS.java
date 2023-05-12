@@ -1,7 +1,5 @@
 package ricky.com.Hot100;
 
-import java.util.Arrays;
-
 /**
  * @Author xdg
  * @Date 2023/4/10 17:18
@@ -13,12 +11,17 @@ public class lengthOfLIS {
     是数组 [0,3,1,6,2,2,7] 的子序列。*/
     class Solution {
         public int lengthOfLIS(int[] nums) {
+            if (nums == null || nums.length == 0) {
+                return 0;
+            }
+
             int[] dp = new int[nums.length];
             dp[0] = 1;
-            Arrays.fill(dp, 1);
             int res = 1;
             for (int i = 1; i < nums.length; i++) {
+                dp[i] = 1;
                 for (int j = 0; j < i; j++) {
+                    //j可以接在i后面
                     if (nums[i] > nums[j]) {
                         dp[i] = Math.max(dp[i], dp[j] + 1);
                     }
