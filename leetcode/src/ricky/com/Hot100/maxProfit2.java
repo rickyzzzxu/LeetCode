@@ -12,27 +12,23 @@ public class maxProfit2 {
     注意：你不能同时参与多笔交易（你必须在再次购买前出售掉之前的股票）。*/
     class Solution {
         public int maxProfit(int[] prices) {
-            if (prices.length == 1) {
+            if (prices == null || prices.length == 0) {
                 return 0;
             }
 
-            //dp[i][0]:第i天持股
-            //dp[i][1]:第i天不持股，处于冷冻期
-            //dp[i][2]:第i天不持股，不处于冷冻期
-            int[][] dp = new int[prices.length][3];
+            int n = prices.length;
+            int[][] dp = new int[n][3];
+            //0持有股票，1不持有股票，当天没卖出，2不持有股票，当天卖出
             dp[0][0] = -prices[0];
             dp[0][1] = 0;
             dp[0][2] = 0;
-            for (int i = 1; i < prices.length; i++) {
-                //要么是前一天不持股，今天不操作，或是前一天不持股且不是冷冻期，第i天买入
-                dp[i][0] = Math.max(dp[i - 1][0], dp[i - 1][2] - prices[i]);
-                //前一天持股后卖出了，第i天为冷冻期
-                dp[i][1] = dp[i - 1][0] + prices[i];
-                //前一天不持股，处于冷冻期，前一天不持股，不处于冷冻期，第i天不操作
-                dp[i][2] = Math.max(dp[i - 1][1], dp[i - 1][2]);
+            for (int i = 1; i < n; i++) {
+                dp[i][0] = Math.max(dp[i - 1][0], dp[i - 1][1] - prices[i]);
+                dp[i][1] = Math.max(dp[i - 1][2], dp[i - 1][1]);
+                dp[i][2] = dp[i - 1][0] + prices[i];
             }
 
-            return Math.max(dp[prices.length - 1][1], dp[prices.length - 1][2]);
+            return Math.max(dp[n - 1][1], dp[n - 1][2]);
         }
     }
 }

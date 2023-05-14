@@ -42,6 +42,7 @@ public class rob3 {
 
         private int[] postOrder(TreeNode root) {
             if (root == null) {
+                //一定是2
                 return new int[2];
             }
 
