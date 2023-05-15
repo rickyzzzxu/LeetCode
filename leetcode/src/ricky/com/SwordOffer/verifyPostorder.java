@@ -24,6 +24,7 @@ public class verifyPostorder {
                 index++;
             }
 
+            //i不能<=r,最后一个是根节点
             for (int i = index; i < r; i++) {
                 if (root > postOrder[i]) {
                     return false;
