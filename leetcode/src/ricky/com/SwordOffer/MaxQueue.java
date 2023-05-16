@@ -30,6 +30,7 @@ public class MaxQueue {
 
     public void push_back(int value) {
         queue.add(value);
+        //必须严格大于value > deque.peekLast()
         while (!deque.isEmpty() && value > deque.peekLast()) {
             deque.pollLast();
         }
