@@ -29,11 +29,11 @@ public class dicesProbability {
                 }
             }
 
+            double total = Math.pow(6, n);
             double[] res = new double[5 * n + 1];
-            double sum = Math.pow(6, n);
             int index = 0;
             for (int i = n; i <= 6 * n; i++) {
-                res[index++] = dp[n][i] / sum;
+                res[index++] = dp[n][i] / total;
             }
 
             return res;

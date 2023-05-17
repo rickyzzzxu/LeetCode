@@ -14,41 +14,37 @@ public class findMedianSortedArrays {
             if (len % 2 == 1) {
                 return findK(nums1, 0, nums2, 0, (len + 1) / 2);
             } else {
-                double res = (findK(nums1, 0, nums2, 0, len / 2) + findK(nums1, 0, nums2, 0, (len + 2) / 2)) / 2.0;
-                return res;
+                return (findK(nums1, 0, nums2, 0, len / 2) + findK(nums1, 0, nums2, 0, (len + 2) / 2)) / 2;
             }
         }
 
-        private double findK(int[] num1, int start1, int[] num2, int start2, int k) {
-            //当num1为空时，返回num2的第k个元素
-            if (start1 >= num1.length) {
-                return num2[start2 + k - 1];
-            }
-            //当num2为空时，返回num1的第k个元素
-            if (start2 >= num2.length) {
-                return num1[start1 + k - 1];
+        private double findK(int[] nums1, int start1, int[] nums2, int start2, int k) {
+            if (nums1.length <= start1) {
+                return nums2[start2 + k - 1];
             }
 
-            //返回第一个数时，找到时的退出条件
+            if (nums2.length <= start2) {
+                return nums1[start1 + k - 1];
+            }
+
             if (k == 1) {
-                return Math.min(num1[start1], num2[start2]);
+                return Math.min(nums1[start1], nums2[start2]);
             }
 
-            //看num1和num2哪个剩余的部分是不是比 k/2要少
-            int halfK1 = Integer.MAX_VALUE;
-            int halfK2 = Integer.MAX_VALUE;
-            if (num1.length - start1 >= k / 2) {
-                halfK1 = num1[start1 + k / 2 - 1];
+            int mid1 = Integer.MAX_VALUE;
+            int mid2 = Integer.MAX_VALUE;
+            if (nums1.length - start1 + 1 > k / 2) {
+                mid1 = nums1[start1 + k / 2 - 1];
             }
 
-            if (num2.length - start2 >= k / 2) {
-                halfK2 = num2[start2 + k / 2 - 1];
+            if (nums2.length - start2 + 1 > k / 2) {
+                mid2 = nums2[start2 + k / 2 - 1];
             }
 
-            if (halfK1 < halfK2) {
-                return findK(num1, start1 + k / 2, num2, start2, k - k / 2);
+            if (mid1 < mid2) {
+                return findK(nums1, start1 + k / 2, nums2, start2, k - k / 2);
             } else {
-                return findK(num1, start1, num2, start2 + k / 2, k - k / 2);
+                return findK(nums1, start1, nums2, start2 + k / 2, k - k / 2);
             }
         }
     }

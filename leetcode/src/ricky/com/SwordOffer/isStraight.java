@@ -1,6 +1,6 @@
 package ricky.com.SwordOffer;
 
-import java.util.HashSet;
+import java.util.ArrayList;
 
 /**
  * @Author xdg
@@ -12,33 +12,33 @@ public class isStraight {
     ，A为1，J为11，Q为12，K为13，而大、小王为 0 ，可以看成任意数字。A 不能视为 14。*/
     class Solution {
         public boolean isStraight(int[] nums) {
-            HashSet<Integer> set = new HashSet<>();
-            int max = 0;
-            int min = 14;
+            ArrayList<Integer> list = new ArrayList<>();
+            int min = Integer.MAX_VALUE;
+            int max = Integer.MIN_VALUE;
             for (int i = 0; i < nums.length; i++) {
                 if (nums[i] == 0) {
                     continue;
                 }
-
-                if (max < nums[i]) {
-                    max = nums[i];
-                }
-                if (min > nums[i]) {
-                    min = nums[i];
-                }
-
-                if (set.contains(nums[i])) {
+                if (list.contains(nums[i])) {
                     return false;
                 } else {
-                    set.add(nums[i]);
+                    list.add(nums[i]);
+                    if (min > nums[i]) {
+                        min = nums[i];
+                    }
+
+                    if (max < nums[i]) {
+                        max = nums[i];
+                    }
                 }
             }
 
-            if (max - min >= 5) {
+            //false的情况比较好判断
+            if (max - min + 1 > 5) {
                 return false;
+            } else {
+                return true;
             }
-
-            return true;
         }
     }
 }
