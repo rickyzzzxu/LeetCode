@@ -15,7 +15,7 @@ public class largestRectangleArea {
             }
 
             int n = heights.length;
-            //左边第一个高度小于第i个矩阵的矩阵
+            //左边第一个高度小于第i个矩阵的矩阵，注意是当前矩阵的前面和后面的位置
             int[] leftMin = new int[n];
             int[] rightMin = new int[n];
             leftMin[0] = -1;
