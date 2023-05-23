@@ -43,6 +43,7 @@ public class maxPathSum {
             return res;
         }
 
+        //返回以当前节点为根节点的最大值
         private int postOrder(TreeNode root) {
             if (root == null) {
                 return 0;
@@ -51,10 +52,11 @@ public class maxPathSum {
             // 计算左子树的最大路径和和右子树的最大路径和
             int l = postOrder(root.left);
             int r = postOrder(root.right);
-            // 计算以当前节点为根节点的最大路径和，并更新全局最大路径和
+            // 计算包含当前根节点在内的路径的最大路径和，并更新全局最大路径和
             int tempMax = Math.max(root.val, root.val + Math.max(l, r));
+            //为什么不是返回这个，因为同一个节点在一条路径中最多出现一次，不能回头的
             res = Math.max(res, Math.max(tempMax, root.val + l + r));
-            // 返回以当前节点为起点的路径
+            // 返回以当前节点为根节点的最大值，因为不能跳过当前节点直接去到上层，不能断，必须加root.val
             return tempMax;
         }
     }

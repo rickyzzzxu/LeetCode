@@ -33,9 +33,11 @@ public class letterCombinations {
                 return;
             }
 
+            //先获取是数组的中第几个
             int index = digits.charAt(k) - '2';
             for (int i = 0; i < str[index].length(); i++) {
                 sb.append(str[index].charAt(i));
+                //遍历字符数组中的下一个
                 dfs(digits, k + 1);
                 sb.deleteCharAt(sb.length() - 1);
             }
