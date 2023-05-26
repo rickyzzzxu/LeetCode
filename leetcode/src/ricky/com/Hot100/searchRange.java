@@ -11,49 +11,45 @@ public class searchRange {
     你必须设计并实现时间复杂度为 O(log n) 的算法解决此问题。*/
     class Solution {
         public int[] searchRange(int[] nums, int target) {
+            if (nums == null || nums.length == 0) {
+                return new int[]{-1, -1};
+            }
+
             int l = 0;
             int r = nums.length - 1;
-            int start = 0;
-            int end = 0;
             boolean flag = false;
             while (l <= r) {
-                int mid = (l - r) / 2 + r;
-                if (target < nums[mid]) {
-                    r = mid - 1;
-                } else {
-                    if (nums[mid] == target) {
-                        flag = true;
-                    }
+                int mid = (r - l) / 2 + l;
+                //这个if要分开写，不然后面的不会执行，超时
+                if (target == nums[mid]) {
+                    flag = true;
+                }
+
+                if (target > nums[mid]) {
                     l = mid + 1;
+                } else {
+                    r = mid - 1;
                 }
             }
-            if (flag) {
-                end = l - 1;
-            } else {
-                end = -1;
-            }
+            int start = r + 1;
 
             l = 0;
             r = nums.length - 1;
-            flag = false;
             while (l <= r) {
-                int mid = (l - r) / 2 + r;
-                if (target <= nums[mid]) {
-                    if (nums[mid] == target) {
-                        flag = true;
-                    }
-                    r = mid - 1;
-                } else {
+                int mid = (r - l) / 2 + l;
+                if (target >= nums[mid]) {
                     l = mid + 1;
+                } else {
+                    r = mid - 1;
                 }
             }
-            if (flag) {
-                start = r + 1;
-            } else {
-                start = -1;
-            }
+            int end = l - 1;
 
-            return new int[]{start, end};
+            if (!flag) {
+                return new int[]{-1, -1};
+            } else {
+                return new int[]{start, end};
+            }
         }
     }
 }

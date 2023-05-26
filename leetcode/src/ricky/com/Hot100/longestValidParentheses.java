@@ -23,6 +23,7 @@ public class longestValidParentheses {
                 if (s.charAt(i) == '(') {
                     stack.push(i);
                 } else {
+                    //pop之前都要检查栈是不是为空
                     if (!stack.isEmpty()) {
                         stack.pop();
                         if (!stack.isEmpty()) {
