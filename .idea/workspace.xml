@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c063a567-29af-4f08-92e4-1c9f3890fec3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/longestValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/longestValidParentheses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/searchRange.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/Hot100/searchRange.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -275,6 +273,10 @@
       <workItem from="1684679492434" duration="6376000" />
       <workItem from="1684817889814" duration="1248000" />
       <workItem from="1684911445706" duration="2775000" />
+      <workItem from="1685119427563" duration="592000" />
+      <workItem from="1685450713041" duration="591000" />
+      <workItem from="1685603315374" duration="592000" />
+      <workItem from="1685726708856" duration="590000" />
     </task>
     <task id="LOCAL-00001" summary="mirrorTree">
       <created>1676912932886</created>

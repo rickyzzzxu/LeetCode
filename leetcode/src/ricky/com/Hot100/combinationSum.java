@@ -19,13 +19,17 @@ public class combinationSum {
         List<Integer> list = new ArrayList<>();
 
         public List<List<Integer>> combinationSum(int[] candidates, int target) {
+            if (candidates == null || candidates.length == 0) {
+                return res;
+            }
+
             Arrays.sort(candidates);
-            dfs(candidates, 0, target);
+            dfs(candidates, target, 0);
             return res;
         }
 
-        private void dfs(int[] candidates, int k, int target) {
-            //一定要有退出条件
+        private void dfs(int[] candidates, int target, int k) {
+            //一定要有剪枝
             if (target < 0) {
                 return;
             }
@@ -36,13 +40,8 @@ public class combinationSum {
             }
 
             for (int i = k; i < candidates.length; i++) {
-                //剪枝
-                if (candidates[i] > target) {
-                    break;
-                }
-
                 list.add(candidates[i]);
-                dfs(candidates, i, target - candidates[i]);
+                dfs(candidates, target - candidates[i], i);
                 list.remove(list.size() - 1);
             }
         }
