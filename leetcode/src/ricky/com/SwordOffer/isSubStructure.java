@@ -13,32 +13,48 @@ public class isSubStructure {
         }
     }
 
+    /**
+     * Definition for a binary tree node.
+     * public class TreeNode {
+     * int val;
+     * TreeNode left;
+     * TreeNode right;
+     * TreeNode(int x) { val = x; }
+     * }
+     */
     class Solution {
         public boolean isSubStructure(TreeNode A, TreeNode B) {
-            if (A == null || B == null) {
+            if (B == null) {
+                return false;
+            }
+            if (A == null) {
                 return false;
             }
 
-            if (f(A, B)) {
+            if (check(A, B)) {
                 return true;
             } else {
                 return isSubStructure(A.left, B) || isSubStructure(A.right, B);
             }
         }
 
-        public boolean f(TreeNode A, TreeNode B) {
-            if (B == null) {
+        private boolean check(TreeNode A, TreeNode B) {
+            if (A == null && B == null) {
                 return true;
             }
 
-            if (A == null) {
+            if (A == null && B != null) {
                 return false;
+            }
+
+            if (A != null && B == null) {
+                return true;
             }
 
             if (A.val != B.val) {
                 return false;
             } else {
-                return f(A.left, B.left) && f(A.right, B.right);
+                return check(A.left, B.left) && check(A.right, B.right);
             }
         }
     }

@@ -6,6 +6,7 @@ public class myPow {
         public double myPow(double x, int n) {
             long temp = n;
             if(n < 0){
+                // 为什么不能用temp=-n，因为这时候n可能已经越界
                 temp = -temp;
                 x = 1 / x;
             }
