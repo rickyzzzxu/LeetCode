@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c063a567-29af-4f08-92e4-1c9f3890fec3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/myPow.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/myPow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/mirrorTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/src/ricky/com/SwordOffer/mirrorTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,7 +286,8 @@
       <workItem from="1687104323104" duration="598000" />
       <workItem from="1687189378177" duration="591000" />
       <workItem from="1687312726263" duration="2909000" />
-      <workItem from="1687533656177" duration="1735000" />
+      <workItem from="1687533656177" duration="2138000" />
+      <workItem from="1687572765737" duration="3594000" />
     </task>
     <task id="LOCAL-00001" summary="mirrorTree">
       <created>1676912932886</created>

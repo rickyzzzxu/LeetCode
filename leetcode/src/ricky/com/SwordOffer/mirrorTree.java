@@ -18,12 +18,10 @@ public class mirrorTree {
                 return null;
             }
 
-            TreeNode left = mirrorTree(root.left);
-            TreeNode right = mirrorTree(root.right);
-            TreeNode temp = left;
-            root.left = right;
-            root.right = temp;
-
+            TreeNode l = mirrorTree(root.left);
+            TreeNode r = mirrorTree(root.right);
+            root.left = r;
+            root.right = l;
             return root;
         }
     }

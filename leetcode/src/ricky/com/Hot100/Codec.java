@@ -33,23 +33,23 @@ public class Codec {
                 return "";
             }
 
+            StringBuilder sb = new StringBuilder();
             Queue<TreeNode> queue = new LinkedList<>();
             queue.add(root);
-            StringBuilder sb = new StringBuilder();
             while (!queue.isEmpty()) {
                 int size = queue.size();
                 for (int i = 0; i < size; i++) {
                     TreeNode temp = queue.poll();
                     if (temp == null) {
-                        sb.append("null,");
+                        sb.append("#,");
                     } else {
+                        sb.append(temp.val + ",");
                         queue.add(temp.left);
                         queue.add(temp.right);
-                        sb.append(temp.val + ",");
                     }
+
                 }
             }
-
             return sb.toString();
         }
 
@@ -63,20 +63,22 @@ public class Codec {
             TreeNode root = new TreeNode(Integer.parseInt(str[0]));
             Queue<TreeNode> queue = new LinkedList<>();
             queue.add(root);
-            int index = 1;
+            int i = 1;
             while (!queue.isEmpty()) {
                 TreeNode temp = queue.poll();
-                if (!str[index].equals("null")) {
-                    temp.left = new TreeNode(Integer.parseInt(str[index]));
-                    queue.add(temp.left);
+                if (!str[i].equals("#")) {
+                    TreeNode left = new TreeNode(Integer.parseInt(str[i]));
+                    temp.left = left;
+                    queue.add(left);
                 }
-                index++;
+                i++;
 
-                if (!str[index].equals("null")) {
-                    temp.right = new TreeNode(Integer.parseInt(str[index]));
-                    queue.add(temp.right);
+                if (!str[i].equals("#")) {
+                    TreeNode right = new TreeNode(Integer.parseInt(str[i]));
+                    temp.right = right;
+                    queue.add(right);
                 }
-                index++;
+                i++;
             }
 
             return root;
