@@ -12,6 +12,8 @@ public class translateNum {
     class Solution {
         public int translateNum(int num) {
             String str = num + "";
+            // 考虑到有dp[i - 2]，所以要设置成str.length() + 1;
+            // dp[i]表示以i结尾的组合数为多少
             int[] dp = new int[str.length() + 1];
             dp[0] = 1;
             dp[1] = 1;
